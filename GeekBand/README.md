@@ -44,14 +44,3 @@
 |   #   | [300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/) |       [C++](cpp/lengthOfLIS.cpp)        |                           |                                 |
 |   #   | [1143. 最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/) | [C++](cpp/longestCommonSubsequence.cpp) |                           |                                 |
 
-## 7. 图与搜索
-
-| Times |                            Title                             |            [C++](cpp/)             | [JavaScript](javascript/) | [Python](python/) |
-| :---: | :----------------------------------------------------------: | :--------------------------------: | :-----------------------: | :---------------: |
-|   #   | [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [C++](cpp/generateParenthesis.cpp) |                           |                   |
-|   #   |   [51. N 皇后](https://leetcode-cn.com/problems/n-queens/)   |    [C++](cpp/solveNQueens.cpp)     |                           |                   |
-|   #   | [52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/) |    [C++](cpp/totalNQueens.cpp)     |                           |                   |
-|   #   |    [78. 子集](https://leetcode-cn.com/problems/subsets/)     |       [C++](cpp/subsets.cpp)       |                           |                   |
-|   #   | [90. 子集 II](https://leetcode-cn.com/problems/subsets-ii/)  |   [C++](cpp/subsetsWithDup.cpp)    |                           |                   |
-|   #   | [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/) |    [C++](cpp/ladderLength.cpp)     |                           |                   |
-

@@ -142,6 +142,16 @@
 |  ##   | [77. 组合](https://leetcode-cn.com/problems/combinations/)   | [C++](LeetCode/cpp/lc_0077.cpp) |            |        |
 |  ##   | [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/) | [C++](LeetCode/cpp/lc_0039.cpp) |            |        |
 |  ##   | [216. 组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/) | [C++](LeetCode/cpp/lc_0216.cpp) |            |        |
+|  ##   | [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [C++](LeetCode/cpp/lc_0022.cpp) |            |        |
+|  ##   | [51. N 皇后](https://leetcode-cn.com/problems/n-queens/)     | [C++](LeetCode/cpp/lc_0051.cpp) |            |        |
+|  ##   | [52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/) | [C++](LeetCode/cpp/lc_0052.cpp) |            |        |
+|  ##   | [78. 子集](https://leetcode-cn.com/problems/subsets/)        | [C++](LeetCode/cpp/lc_0078.cpp) |            |        |
+|  ##   | [90. 子集 II](https://leetcode-cn.com/problems/subsets-ii/)  | [C++](LeetCode/cpp/lc_0090.cpp) |            |        |
+|       |                                                              |                                 |            |        |
+|  ##   | [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/) | [C++](LeetCode/cpp/lc_0127.cpp) |            |        |
+|       |                                                              |                                 |            |        |
+|       |                                                              |                                 |            |        |
+|       |                                                              |                                 |            |        |
 
 ## 贪心算法
 
