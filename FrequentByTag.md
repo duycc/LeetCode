@@ -165,6 +165,18 @@
 
 | Times | Title                                                        |               C++               | JavaScript | Python |
 | :---: | :----------------------------------------------------------- | :-----------------------------: | :--------: | :----: |
+|  ###  | [509. 斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/) | [C++](LeetCode/cpp/lc_0509.cpp) |            |        |
+|  ###  | [1137. 第 N 个泰波那契数](https://leetcode-cn.com/problems/n-th-tribonacci-number/) | [C++](LeetCode/cpp/lc_1137.cpp) |            |        |
+|  ###  | [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [C++](LeetCode/cpp/lc_0070.cpp) |            |        |
+|  ##   | [139. 单词拆分](https://leetcode-cn.com/problems/word-break/) | [C++](LeetCode/cpp/lc_0139.cpp) |            |        |
+|   #   | [140. 单词拆分 II](https://leetcode-cn.com/problems/word-break-ii/) | [C++](LeetCode/cpp/lc_0140.cpp) |            |        |
+|  ##   | [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/) | [C++](LeetCode/cpp/lc_0322.cpp) |            |        |
+|  ##   | [518. 零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/) | [C++](LeetCode/cpp/lc_0518.cpp) |            |        |
+|  ##   | [62. 不同路径](https://leetcode-cn.com/problems/unique-paths/) | [C++](LeetCode/cpp/lc_0062.cpp) |            |        |
+|  ##   | [63. 不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/) | [C++](LeetCode/cpp/lc_0063.cpp) |            |        |
+|  ##   | [64. 最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/) | [C++](LeetCode/cpp/lc_0064.cpp) |            |        |
+|       |                                                              |                                 |            |        |
+|       |                                                              |                                 |            |        |
 |  ##   | [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [C++](LeetCode/cpp/lc_0053.cpp) |            |        |
 |   #   |                                                              |                                 |            |        |
 |   #   |                                                              |                                 |            |        |
