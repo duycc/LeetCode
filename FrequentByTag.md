@@ -142,7 +142,9 @@
 |  ##   | [77. 组合](https://leetcode-cn.com/problems/combinations/)   | [C++](LeetCode/cpp/lc_0077.cpp) |            |        |
 |  ##   | [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/) | [C++](LeetCode/cpp/lc_0039.cpp) |            |        |
 |  ##   | [216. 组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/) | [C++](LeetCode/cpp/lc_0216.cpp) |            |        |
+|  ##   | [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) | [C++](LeetCode/cpp/lc_0017.cpp) |            |        |
 |  ##   | [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [C++](LeetCode/cpp/lc_0022.cpp) |            |        |
+|  ##   | [131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/) | [C++](LeetCode/cpp/lc_0131.cpp) |            |        |
 |  ##   | [51. N 皇后](https://leetcode-cn.com/problems/n-queens/)     | [C++](LeetCode/cpp/lc_0051.cpp) |            |        |
 |  ##   | [52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/) | [C++](LeetCode/cpp/lc_0052.cpp) |            |        |
 |  ##   | [78. 子集](https://leetcode-cn.com/problems/subsets/)        | [C++](LeetCode/cpp/lc_0078.cpp) |            |        |
@@ -155,11 +157,14 @@
 
 ## 贪心算法
 
-| Times | Title | C++  | JavaScript | Python |
-| :---: | :---- | :--: | :--------: | :----: |
-|   #   |       |      |            |        |
-|   #   |       |      |            |        |
-|   #   |       |      |            |        |
+| Times | Title                                                        |               C++               | JavaScript | Python |
+| :---: | :----------------------------------------------------------- | :-----------------------------: | :--------: | :----: |
+|   #   | [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)  | [C++](LeetCode/cpp/lc_0055.cpp) |            |        |
+|   #   | [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) | [C++](LeetCode/cpp/lc_0045.cpp) |            |        |
+|   #   | [134. 加油站](https://leetcode-cn.com/problems/gas-station/) | [C++](LeetCode/cpp/lc_0134.cpp) |            |        |
+|       |                                                              |                                 |            |        |
+|       |                                                              |                                 |            |        |
+|       |                                                              |                                 |            |        |
 
 ## 动态规划
 
@@ -175,11 +180,14 @@
 |  ##   | [62. 不同路径](https://leetcode-cn.com/problems/unique-paths/) | [C++](LeetCode/cpp/lc_0062.cpp) |            |        |
 |  ##   | [63. 不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/) | [C++](LeetCode/cpp/lc_0063.cpp) |            |        |
 |  ##   | [64. 最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/) | [C++](LeetCode/cpp/lc_0064.cpp) |            |        |
-|       |                                                              |                                 |            |        |
-|       |                                                              |                                 |            |        |
+|  ##   | [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle/) | [C++](LeetCode/cpp/lc_0120.cpp) |            |        |
+|  ##   | [96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/) | [C++](LeetCode/cpp/lc_0096.cpp) |            |        |
+|  ##   | [95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/) | [C++](LeetCode/cpp/lc_0095.cpp) |            |        |
 |  ##   | [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [C++](LeetCode/cpp/lc_0053.cpp) |            |        |
-|   #   |                                                              |                                 |            |        |
-|   #   |                                                              |                                 |            |        |
+|   #   | [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [C++](LeetCode/cpp/lc_0072.cpp) |            |        |
+|   #   | [238. 除自身以外数组的乘积](https://leetcode-cn.com/problems/product-of-array-except-self/) | [C++](LeetCode/cpp/lc_0238.cpp) |            |        |
+|   #   | [300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/) | [C++](LeetCode/cpp/lc_0300.cpp) |            |        |
+|   #   | [1143. 最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/) | [C++](LeetCode/cpp/lc_1143.cpp) |            |        |
 
 ## 单调栈
 
@@ -192,7 +200,7 @@
 |   #   | [42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water/) | [C++](LeetCode/cpp/lc_0042.cpp) |            |        |
 |   #   | [84. 柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) | [C++](LeetCode/cpp/lc_0084.cpp) |            |        |
 
-## 查找，排序
+## 查找
 
 | Times | Title                                                        |                 C++                  |                JavaScript                | Python |
 | :---: | :----------------------------------------------------------- | :----------------------------------: | :--------------------------------------: | :----: |
