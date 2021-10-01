@@ -7,26 +7,30 @@
 
 class Solution {
 public:
-  bool isSubtree(TreeNode *s, TreeNode *t) {
-    if (nullptr == t)
+  bool isSubtree(TreeNode *root, TreeNode *subRoot) {
+    if (subRoot == nullptr) {
       return true;
-    if (nullptr == s)
-      return false;
-    if (s->val == t->val) {
-      if (matchTree(s, t))
-        return true;
     }
-
-    return isSubtree(s->left, t) || isSubtree(s->right, t);
-  }
-  bool matchTree(TreeNode *leftTree, TreeNode *rightTree) {
-    if (nullptr == leftTree && nullptr == rightTree)
+    if (root == nullptr) {
+      return false;
+    }
+    if (isSameTree(root, subRoot)) {
       return true;
-    if (nullptr == leftTree || nullptr == rightTree)
-      return false;
-    if (leftTree->val != rightTree->val)
-      return false;
+    }
+    return isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);
+  }
 
-    return matchTree(leftTree->left, rightTree->left) && matchTree(leftTree->right, rightTree->right);
+private:
+  bool isSameTree(const TreeNode *left, const TreeNode *right) {
+    if (!left && !right) {
+      return true;
+    }
+    if (!left || !right) {
+      return false;
+    }
+    if (left->val != right->val) {
+      return false;
+    }
+    return isSameTree(left->left, right->left) && isSameTree(left->right, right->right);
   }
 };

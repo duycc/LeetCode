@@ -4,18 +4,41 @@
  * @author   YongDu
  * @date     2021-09-10
  */
+// 前序递归遍历
 class Solution {
 public:
   TreeNode *invertTree(TreeNode *root) {
-    if (nullptr == root)
+    if (root == nullptr) {
       return nullptr;
+    }
+    std::swap(root->left, root->right);
+    invertTree(root->left);
+    invertTree(root->right);
+    return root;
+  }
+};
 
-    swap(root->left, root->right);
-    if (root->left)
-      invertTree(root->left);
-    if (root->right)
-      invertTree(root->right);
-
+// 迭代版
+class Solution {
+public:
+  TreeNode *invertTree(TreeNode *root) {
+    if (root == nullptr) {
+      return nullptr;
+    }
+    std::stack<TreeNode *> stk;
+    TreeNode *node = root;
+    stk.push(node);
+    while (!stk.empty()) {
+      node = stk.top();
+      stk.pop();
+      std::swap(node->left, node->right);
+      if (node->right) {
+        stk.push(node->right);
+      }
+      if (node->left) {
+        stk.push(node->left);
+      }
+    }
     return root;
   }
 };

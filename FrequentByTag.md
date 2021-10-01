@@ -63,7 +63,8 @@
 |  ##   | [541. 反转字符串 II](https://leetcode-cn.com/problems/reverse-string-ii/) | [C++](LeetCode/cpp/lc_0541.cpp) |                                      |                                      |
 |   #   | [151. 翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/) | [C++](LeetCode/cpp/lc_0151.cpp) |                                      | [Python](LeetCode/python/lc_0151.py) |
 |  ##   | [557. 反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/) | [C++](LeetCode/cpp/lc_0557.cpp) | [JS](LeetCode/javascript/lc_0557.js) | [Python](LeetCode/python/lc_0557.py) |
-|       | [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) |                                 | [JS](LeetCode/javascript/lc_0028.js) |                                      |
+|  ##   | [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [C++](LeetCode/cpp/lc_0028.cpp) | [JS](LeetCode/javascript/lc_0028.js) |                                      |
+|  ##   | [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [C++](LeetCode/cpp/lc_0459.cpp) |                                      |                                      |
 
 ## 双指针法
 
@@ -122,12 +123,15 @@
 |   #   | [100. 相同的树](https://leetcode-cn.com/problems/same-tree/) |                                 | [JS](LeetCode/javascript/lc_0100.ts) |                                      |
 |  ###  | [199. 二叉树的右视图](https://leetcode-cn.com/problems/binary-tree-right-side-view/) | [C++](LeetCode/cpp/lc_0199.cpp) | [JS](LeetCode/javascript/lc_0199.js) |                                      |
 |   #   | [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/) | [C++](LeetCode/cpp/lc_0110.cpp) | [JS](LeetCode/javascript/lc_0110.ts) |                                      |
-|   #   | [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/) | [C++](LeetCode/cpp/lc_0101.cpp) |                                      |                                      |
-|   #   | [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/) | [C++](LeetCode/cpp/lc_0226.cpp) |                                      |                                      |
+|  ##   | [100. 相同的树](https://leetcode-cn.com/problems/same-tree/) | [C++](LeetCode/cpp/lc_0100.cpp) |                                      |                                      |
+|  ###  | [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/) | [C++](LeetCode/cpp/lc_0101.cpp) |                                      |                                      |
+|  ##   | [572. 另一棵树的子树](https://leetcode-cn.com/problems/subtree-of-another-tree/) | [C++](LeetCode/cpp/lc_0572.cpp) | [JS](LeetCode/javascript/lc_0572.ts) |                                      |
+|  ###  | [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/) | [C++](LeetCode/cpp/lc_0226.cpp) |                                      |                                      |
 |   #   | [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/) | [C++](LeetCode/cpp/lc_0098.cpp) | [JS](LeetCode/javascript/lc_0098.ts) |                                      |
-|   #   | [572. 另一棵树的子树](https://leetcode-cn.com/problems/subtree-of-another-tree/) | [C++](LeetCode/cpp/lc_0572.cpp) | [JS](LeetCode/javascript/lc_0572.ts) |                                      |
-|   #   | [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | [C++](LeetCode/cpp/lc_0104.cpp) | [JS](LeetCode/javascript/lc_0104.ts) |                                      |
-|   #   | [111. 二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/) | [C++](LeetCode/cpp/lc_0111.cpp) | [JS](LeetCode/javascript/lc_0111.ts) |                                      |
+|  ###  | [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | [C++](LeetCode/cpp/lc_0104.cpp) | [JS](LeetCode/javascript/lc_0104.ts) |                                      |
+|  ###  | [111. 二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/) | [C++](LeetCode/cpp/lc_0111.cpp) | [JS](LeetCode/javascript/lc_0111.ts) |                                      |
+|  ###  | [559. N 叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/) | [C++](LeetCode/cpp/lc_0559.cpp) |                                      |                                      |
+|  ##   | [222. 完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/) | [C++](LeetCode/cpp/lc_0222.cpp) |                                      |                                      |
 |   #   | [257. 二叉树的所有路径](https://leetcode-cn.com/problems/binary-tree-paths/) | [C++](LeetCode/cpp/lc_0257.cpp) | [JS](LeetCode/javascript/lc_0257.ts) |                                      |
 |   #   | [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)  | [C++](LeetCode/cpp/lc_0112.cpp) |                                      |                                      |
 |   #   | [113. 路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/) | [C++](LeetCode/cpp/lc_0113.cpp) |                                      |                                      |

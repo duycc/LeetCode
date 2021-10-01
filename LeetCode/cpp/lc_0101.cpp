@@ -8,18 +8,23 @@
 class Solution {
 public:
   bool isSymmetric(TreeNode *root) {
-    if (nullptr == root)
+    if (root == nullptr) {
       return true;
+    }
     return compare(root->left, root->right);
   }
 
-  bool compare(TreeNode *left, TreeNode *right) {
-    if (!left && !right)
+private:
+  bool compare(const TreeNode *left, const TreeNode *right) {
+    if (!left && !right) {
       return true;
-    if (!left || !right)
+    }
+    if (!left || !right) {
       return false;
-    if (left->val != right->val)
+    }
+    if (left->val != right->val) {
       return false;
+    }
     return compare(left->left, right->right) && compare(left->right, right->left);
   }
 };
