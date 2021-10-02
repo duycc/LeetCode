@@ -4,43 +4,44 @@
  * @author   YongDu
  * @date     2021-09-09
  */
+// 递归
 class Solution {
 public:
   bool isBalanced(TreeNode *root) {
-    if (nullptr == root)
+    if (root == nullptr) {
       return true;
-
-#if 0
-        // 1. 遍历左右子树高度
-        return (abs(level(root->left) - level(root->right)) < 2) &&
-                isBalanced(root->left) && isBalanced(root->right);
-#endif
-
-    // 2. 一种更好的解决办法
-    return isBalancedHelper(root) != -1;
+    }
+    return std::abs(getHight(root->left) - getHight(root->right)) < 2 && isBalanced(root->left) &&
+           isBalanced(root->right);
   }
 
-  int level(TreeNode *root) {
-    if (nullptr == root)
+private:
+  int getHight(const TreeNode *root) {
+    if (root == nullptr) {
       return 0;
-    return max(level(root->left), level(root->right)) + 1;
+    }
+    return std::max(getHight(root->left), getHight(root->right)) + 1;
   }
+};
 
-  int isBalancedHelper(TreeNode *root) {
-    if (nullptr == root)
+// 改进版递归
+class Solution {
+public:
+  bool isBalanced(TreeNode *root) { return getDepth(root) == -1 ? false : true; }
+
+private:
+  int getDepth(const TreeNode *root) {
+    if (root == nullptr) {
       return 0;
-
-    int leftHeight = isBalancedHelper(root->left);
-    if (leftHeight == -1)
+    }
+    int leftDepth = getDepth(root->left);
+    if (leftDepth == -1) {
       return -1;
-
-    int rightHeight = isBalancedHelper(root->right);
-    if (rightHeight == -1)
+    }
+    int rightDepth = getDepth(root->right);
+    if (rightDepth == -1) {
       return -1;
-
-    if (abs(leftHeight - rightHeight) > 1)
-      return -1;
-
-    return max(leftHeight, rightHeight) + 1;
+    }
+    return std::abs(leftDepth - rightDepth) > 1 ? -1 : std::max(leftDepth, rightDepth) + 1;
   }
 };

@@ -5,42 +5,43 @@
  * @date     2021-09-10
  */
 
+//===----------------------------- 递归 ------------------------------===//
 class Solution {
 public:
   bool hasPathSum(TreeNode *root, int targetSum) {
-// 1. 递归 + 回溯
-#if 0
-        if(nullptr == root) return false;
-        if(nullptr == root->left && nullptr == root->right && root->val == targetSum) {
-            return true;
-        }       
-        return hasPathSum(root->left, targetSum - root->val) ||
-            hasPathSum(root->right, targetSum - root->val);
-#endif
-
-// 2. 迭代
-#if 1
-    if (nullptr == root)
+    if (root == nullptr) {
       return false;
-    stack<pair<TreeNode *, int>> stk;
-    stk.push(make_pair(root, root->val));
-    pair<TreeNode *, int> nodeInfo;
+    }
+    if (root->val == targetSum && (root->left == nullptr && root->right == nullptr)) {
+      return true;
+    }
+    return hasPathSum(root->left, targetSum - root->val) || hasPathSum(root->right, targetSum - root->val);
+  }
+};
 
+//===----------------------------- 迭代 ------------------------------===//
+class Solution {
+public:
+  bool hasPathSum(TreeNode *root, int targetSum) {
+    if (root == nullptr) {
+      return false;
+    }
+    std::stack<std::pair<TreeNode *, int>> stk; // <node, pathSum>
+    stk.push(std::make_pair(root, root->val));
+    std::pair<TreeNode *, int> node;
     while (!stk.empty()) {
-      nodeInfo = stk.top();
+      node = stk.top();
       stk.pop();
-      if (nullptr == nodeInfo.first->left && nullptr == nodeInfo.first->right && targetSum == nodeInfo.second) {
+      if (node.second == targetSum && (node.first->left == nullptr && node.first->right == nullptr)) {
         return true;
       }
-      if (nodeInfo.first->right) {
-        stk.push(make_pair(nodeInfo.first->right, nodeInfo.second + nodeInfo.first->right->val));
+      if (node.first->left) {
+        stk.push(std::make_pair(node.first->left, node.second + node.first->left->val));
       }
-      if (nodeInfo.first->left) {
-        stk.push(make_pair(nodeInfo.first->left, nodeInfo.second + nodeInfo.first->left->val));
+      if (node.first->right) {
+        stk.push(std::make_pair(node.first->right, node.second + node.first->right->val));
       }
     }
-
     return false;
-#endif
   }
 };

@@ -6,31 +6,29 @@
  */
 
 class Solution {
-private:
-  int paths = 0;
-
 public:
-  void traversal(TreeNode *root, int sum) {
-    if (nullptr == root)
-      return;
-
-    sum -= root->val;
-    if (0 == sum)
-      paths++;
-
-    traversal(root->left, sum);
-    traversal(root->right, sum);
+  int pathSum(TreeNode *root, int targetSum) {
+    if (root == nullptr) {
+      return paths;
+    }
+    traversal(root, targetSum);
+    (void)pathSum(root->left, targetSum);
+    (void)pathSum(root->right, targetSum);
+    return paths;
   }
 
-  int pathSum(TreeNode *root, int sum) {
-    if (nullptr == root)
-      return paths;
+private:
+  int paths{0};
 
-    traversal(root, sum);
-
-    pathSum(root->left, sum);
-    pathSum(root->right, sum);
-
-    return paths;
+  void traversal(TreeNode *root, int curSum) {
+    if (root == nullptr) {
+      return;
+    }
+    curSum -= root->val;
+    if (curSum == 0) {
+      paths++;
+    }
+    traversal(root->left, curSum);
+    traversal(root->right, curSum);
   }
 };
