@@ -48,12 +48,14 @@
 |  ##   | [350. 两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [C++](LeetCode/cpp/lc_0350.cpp) |                                      |                                      |
 |  ##   | [202. 快乐数](https://leetcode-cn.com/problems/happy-number/) | [C++](LeetCode/cpp/lc_0202.cpp) |                                      |                                      |
 |  ##   | [383. 赎金信](https://leetcode-cn.com/problems/ransom-note/) | [C++](LeetCode/cpp/lc_0383.cpp) |                                      |                                      |
-|  ###  | [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)     | [C++](LeetCode/cpp/lc_0001.cpp) | [JS](LeetCode/javascript/lc_0001.js) | [Python](LeetCode/python/lc_0001.py) |
+| ####  | [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)     | [C++](LeetCode/cpp/lc_0001.cpp) | [JS](LeetCode/javascript/lc_0001.js) | [Python](LeetCode/python/lc_0001.py) |
+| ####  | [167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [C++](LeetCode/cpp/lc_0167.cpp) |                                      |                                      |
 |  ##   | [454. 四数相加 II](https://leetcode-cn.com/problems/4sum-ii/) | [C++](LeetCode/cpp/lc_0454.cpp) |                                      |                                      |
 |  ##   | [128. 最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/) | [C++](LeetCode/cpp/lc_0128.cpp) | [JS](LeetCode/javascript/lc_0128.js) | [Python](LeetCode/python/lc_0128.py) |
 |  ##   | [560. 和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/) | [C++](LeetCode/cpp/lc_0560.cpp) |                                      |                                      |
 |  ##   | [523. 连续的子数组和](https://leetcode-cn.com/problems/continuous-subarray-sum/) | [C++](LeetCode/cpp/lc_0523.cpp) |                                      |                                      |
 |  ##   | [41. 缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/) | [C++](LeetCode/cpp/lc_0041.cpp) |                                      |                                      |
+| ##### | [217. 存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/) | [C++](LeetCode/cpp/lc_0217.cpp) |                                      |                                      |
 
 ## 字符串
 
@@ -65,6 +67,7 @@
 |  ##   | [557. 反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/) | [C++](LeetCode/cpp/lc_0557.cpp) | [JS](LeetCode/javascript/lc_0557.js) | [Python](LeetCode/python/lc_0557.py) |
 |  ##   | [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [C++](LeetCode/cpp/lc_0028.cpp) | [JS](LeetCode/javascript/lc_0028.js) |                                      |
 |  ##   | [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [C++](LeetCode/cpp/lc_0459.cpp) |                                      |                                      |
+|   #   | [482. 密钥格式化](https://leetcode-cn.com/problems/license-key-formatting/) | [C++](LeetCode/cpp/lc_0482.cpp) |                                      |                                      |
 
 ## 双指针法
 
@@ -199,7 +202,7 @@
 |  ##   | [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle/) | [C++](LeetCode/cpp/lc_0120.cpp) |            |        |
 |  ##   | [96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/) | [C++](LeetCode/cpp/lc_0096.cpp) |            |        |
 |  ##   | [95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/) | [C++](LeetCode/cpp/lc_0095.cpp) |            |        |
-|  ##   | [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [C++](LeetCode/cpp/lc_0053.cpp) |            |        |
+|  ###  | [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [C++](LeetCode/cpp/lc_0053.cpp) |            |        |
 |   #   | [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [C++](LeetCode/cpp/lc_0072.cpp) |            |        |
 |   #   | [238. 除自身以外数组的乘积](https://leetcode-cn.com/problems/product-of-array-except-self/) | [C++](LeetCode/cpp/lc_0238.cpp) |            |        |
 |   #   | [300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/) | [C++](LeetCode/cpp/lc_0300.cpp) |            |        |
