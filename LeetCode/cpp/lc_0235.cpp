@@ -11,31 +11,33 @@
  * @date     2021-03-08
  */
 
+//===----------------------------- 递归版 ------------------------------===//
 class Solution {
 public:
   TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q) {
-// 1. 递归
-#if 0
-        if(p->val < root->val && q->val < root->val) {
-            return lowestCommonAncestor(root->left, p, q);
-        }
-        if(p->val > root->val && q->val > root->val) {
-            return lowestCommonAncestor(root->right, p, q);
-        }
-
-        return root;
-#endif
-
-    // 2. 迭代
-    while (root) {
-      if (p->val < root->val && q->val < root->val)
-        root = root->left;
-      else if (p->val > root->val && q->val > root->val)
-        root = root->right;
-      else
-        break;
+    if (root->val > p->val && root->val > q->val) {
+      return lowestCommonAncestor(root->left, p, q);
     }
-
+    if (root->val < p->val && root->val < q->val) {
+      return lowestCommonAncestor(root->right, p, q);
+    }
     return root;
+  }
+};
+
+//===----------------------------- 迭代版 ------------------------------===//
+class Solution {
+public:
+  TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q) {
+    while (root) {
+      if (root->val > p->val && root->val > q->val) {
+        root = root->left;
+      } else if (root->val < p->val && root->val < q->val) {
+        root = root->right;
+      } else {
+        return root;
+      }
+    }
+    return nullptr;
   }
 };

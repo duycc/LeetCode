@@ -1,30 +1,29 @@
 /**
- * @file     lc_0538.cpp
- * @brief    https://leetcode-cn.com/problems/convert-bst-to-greater-tree/
+ * @file     lc_1038.cpp
+ * @brief    https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/
  * @author   YongDu
- * @date     2021-09-09
+ * @date     2021-10-03
  */
-
-/*----- 递归版 -----*/
+//===----------------------------- 递归版 ------------------------------===//
 class Solution {
 public:
   int preVal{0};
 
-  TreeNode *convertBST(TreeNode *root) {
+  TreeNode *bstToGst(TreeNode *root) {
     if (root) {
-      convertBST(root->right);
+      bstToGst(root->right);
       root->val += preVal;
       preVal = root->val;
-      convertBST(root->left);
+      bstToGst(root->left);
     }
     return root;
   }
 };
 
-/*----- 迭代版 -----*/
+//===----------------------------- 迭代版 ------------------------------===//
 class Solution {
 public:
-  TreeNode *convertBST(TreeNode *root) {
+  TreeNode *bstToGst(TreeNode *root) {
     std::stack<TreeNode *> stk;
     TreeNode *node = root;
     int preVal = 0;

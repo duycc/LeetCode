@@ -7,4 +7,5 @@
 |  3   | [剑指Offer-专项突击版]()                   |         :sob:         |          |
 |  4   | [华为机试-牛客](HuaweiMachineTest)         |         :sob:         |          |
 |  5   | [程序员面试金典-第6版](InterviewGolden.md) |         :sob:         |          |
+|  6   | [力扣周赛](WeeklyContest.md)               |       :walking:       |          |
 

@@ -6,16 +6,43 @@
  */
 class Solution {
 public:
-  bool isValidBST(TreeNode *root) { return helper(root, LONG_MIN, LONG_MAX); }
-  bool helper(TreeNode *root, long long min, long long max) {
-    if (!root)
-      return true;
-    if ((root->val < max || (root->val == LONG_MAX && root->right == nullptr)) &&
-        (root->val > min || (root->val == LONG_MIN && root->left == nullptr)) && helper(root->left, min, root->val) &&
-        helper(root->right, root->val, max)) {
+  TreeNode *preNode = nullptr;
+
+  bool isValidBST(TreeNode *root) {
+    if (root == nullptr) {
       return true;
     }
+    bool leftIsValid = isValidBST(root->left);
+    if (preNode != nullptr && root->val <= preNode->val) {
+      return false;
+    }
+    preNode = root;
+    bool rightIsValid = isValidBST(root->right);
+    return leftIsValid && rightIsValid;
+  }
+};
 
-    return false;
+//===----------------------------- 迭代版 ------------------------------===//
+class Solution {
+public:
+  bool isValidBST(TreeNode *root) {
+    TreeNode *curNode = root;
+    TreeNode *preNode = nullptr;
+    std::stack<TreeNode *> stk;
+    while (curNode || !stk.empty()) {
+      if (curNode) {
+        stk.push(curNode);
+        curNode = curNode->left;
+      } else {
+        curNode = stk.top();
+        stk.pop();
+        if (preNode != nullptr && curNode->val <= preNode->val) {
+          return false;
+        }
+        preNode = curNode;
+        curNode = curNode->right;
+      }
+    }
+    return true;
   }
 };
