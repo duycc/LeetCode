@@ -1,12 +1,13 @@
 /**
- * @file     lc_0039.cpp
- * @brief    https://leetcode-cn.com/problems/combination-sum/
+ * @file     lc_0040.cpp
+ * @brief    https://leetcode-cn.com/problems/combination-sum-ii/
  * @author   YongDu
- * @date     2021-09-15
+ * @date     2021-10-04
  */
 class Solution {
 public:
-  vector<vector<int>> combinationSum(vector<int> &candidates, int target) {
+  vector<vector<int>> combinationSum2(vector<int> &candidates, int target) {
+    std::sort(candidates.begin(), candidates.end());
     backtracking(candidates, target, 0, 0);
     return result;
   }
@@ -24,9 +25,14 @@ private:
       return;
     }
     for (int i = beginIdx; i < candidates.size(); ++i) {
+      if (i > beginIdx && candidates[i] == candidates[i - 1]) {
+        continue;
+      }
+      curSum += candidates[i];
       path.emplace_back(candidates[i]);
-      backtracking(candidates, targetSum, curSum + candidates[i], i);
+      backtracking(candidates, targetSum, curSum, i + 1);
       path.pop_back();
+      curSum -= candidates[i];
     }
   }
 };

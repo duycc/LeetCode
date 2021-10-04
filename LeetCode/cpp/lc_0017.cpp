@@ -8,9 +8,9 @@ class Solution {
 public:
   vector<string> letterCombinations(string digits) {
     if (digits.empty()) {
-      return result;
+      return vector<string>();
     }
-    backTracking(digits, 0);
+    backtracking(digits, 0);
     return result;
   }
 
@@ -18,20 +18,18 @@ private:
   vector<string> result;
   string path;
 
-  const vector<string> letterMap = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+  const vector<string> lettersMap = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
-  void backTracking(const string &digits, int nthDigit) {
-    if (nthDigit == digits.size()) {
+  void backtracking(const string &digits, int index) {
+    if (path.size() == digits.size()) {
       result.emplace_back(path);
       return;
     }
-    int digit = digits[nthDigit] - '0';
-    string letters = letterMap[digit];
-    for (int i = 0; i < letters.size(); ++i) {
-      path.push_back(letters[i]);
-      backTracking(digits, nthDigit + 1);
+    int digit = digits[index] - '0';
+    for (auto ch : lettersMap[digit]) {
+      path.push_back(ch);
+      backtracking(digits, index + 1);
       path.pop_back();
     }
-    return;
   }
 };

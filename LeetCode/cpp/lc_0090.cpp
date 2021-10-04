@@ -7,26 +7,27 @@
 class Solution {
 public:
   vector<vector<int>> subsetsWithDup(vector<int> &nums) {
+    if (nums.empty()) {
+      return vector<vector<int>>();
+    }
     std::sort(nums.begin(), nums.end());
-    backTrack(nums, 0);
+    backtracking(nums, 0);
     return result;
   }
 
 private:
   vector<vector<int>> result;
-  vector<int> subset;
+  vector<int> path;
 
-  void backTrack(vector<int> &nums, int startIndex) {
-    result.emplace_back(subset);
-    std::unordered_set<int> uset;
-    for (int i = startIndex; i < nums.size(); ++i) {
-      if (uset.find(nums[i]) == uset.end()) {
-        uset.emplace(nums[i]);
-        subset.emplace_back(nums[i]);
-        backTrack(nums, i + 1);
-        subset.pop_back();
+  void backtracking(const vector<int> &nums, int beginIdx) {
+    result.emplace_back(path);
+    for (int i = beginIdx; i < nums.size(); ++i) {
+      if (i > beginIdx && nums[i] == nums[i - 1]) {
+        continue;
       }
+      path.emplace_back(nums[i]);
+      backtracking(nums, i + 1);
+      path.pop_back();
     }
-    return;
   }
 };
