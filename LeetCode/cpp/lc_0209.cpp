@@ -7,18 +7,17 @@
 class Solution {
 public:
   int minSubArrayLen(int target, vector<int> &nums) {
-    // 滑动窗口
     int minLen = INT_MAX;
-    int i = 0;
+    int left = 0;
     int sum = 0;
-    for (int j = 0; j < nums.size(); ++j) {
-      sum += nums[j];
+    for (int right = 0; right < nums.size(); ++right) {
+      sum += nums[right];
+      // 缩小滑动窗口
       while (sum >= target) {
-        int subLen = j - i + 1;
-        minLen = subLen < minLen ? subLen : minLen;
-        sum -= nums[i++];
+        minLen = std::min(right - left + 1, minLen);
+        sum -= nums[left++];
       }
     }
-    return minLen == INT_MAX ? 0 : minLen;
+    return minLen != INT_MAX ? minLen : 0;
   }
 };
