@@ -17,7 +17,7 @@
 |  ##   | [54. 螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/) | [C++](LeetCode/cpp/lc_0054.cpp) |                                      |                                      |
 |  ##   | [59. 螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/) | [C++](LeetCode/cpp/lc_0059.cpp) |                                      |                                      |
 |  ###  | [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [C++](LeetCode/cpp/lc_0088.cpp) | [JS](LeetCode/javascript/lc_0088.js) | [Python](LeetCode/python/lc_0088.py) |
-|   #   | [414. 第三大的数](https://leetcode-cn.com/problems/third-maximum-number/) | [C++](LeetCode/cpp/lc_0414.cpp) | [JS](LeetCode/javascript/lc_0414.js) |                                      |
+|  ##   | [414. 第三大的数](https://leetcode-cn.com/problems/third-maximum-number/) | [C++](LeetCode/cpp/lc_0414.cpp) | [JS](LeetCode/javascript/lc_0414.js) |                                      |
 |  ##   | [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/) | [C++](LeetCode/cpp/lc_0152.cpp) |                                      |                                      |
 
 ## 链表
@@ -45,7 +45,7 @@
 |  ##   | [460. LFU 缓存](https://leetcode-cn.com/problems/lfu-cache/) | [C++](LeetCode/cpp/lc_0460.cpp) |                                      |                                      |
 |  ##   | [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [C++](LeetCode/cpp/lc_0242.cpp) | [JS](LeetCode/javascript/lc_0242.js) | [Python](LeetCode/python/lc_0242.py) |
 |  ##   | [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/) | [C++](LeetCode/cpp/lc_0349.cpp) |                                      |                                      |
-|  ##   | [350. 两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [C++](LeetCode/cpp/lc_0350.cpp) |                                      |                                      |
+|  ###  | [350. 两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [C++](LeetCode/cpp/lc_0350.cpp) |                                      |                                      |
 |  ##   | [202. 快乐数](https://leetcode-cn.com/problems/happy-number/) | [C++](LeetCode/cpp/lc_0202.cpp) |                                      |                                      |
 |  ##   | [383. 赎金信](https://leetcode-cn.com/problems/ransom-note/) | [C++](LeetCode/cpp/lc_0383.cpp) |                                      |                                      |
 | ##### | [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)     | [C++](LeetCode/cpp/lc_0001.cpp) | [JS](LeetCode/javascript/lc_0001.js) | [Python](LeetCode/python/lc_0001.py) |
@@ -68,6 +68,7 @@
 |  ##   | [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [C++](LeetCode/cpp/lc_0028.cpp) | [JS](LeetCode/javascript/lc_0028.js) |                                      |
 |  ##   | [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [C++](LeetCode/cpp/lc_0459.cpp) |                                      |                                      |
 |   #   | [482. 密钥格式化](https://leetcode-cn.com/problems/license-key-formatting/) | [C++](LeetCode/cpp/lc_0482.cpp) |                                      |                                      |
+|       | [434. 字符串中的单词数](https://leetcode-cn.com/problems/number-of-segments-in-a-string/) |                                 |                                      |                                      |
 
 ## 双指针法
 
@@ -185,7 +186,7 @@
 |   #   | [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)  | [C++](LeetCode/cpp/lc_0055.cpp) |            |        |
 |   #   | [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) | [C++](LeetCode/cpp/lc_0045.cpp) |            |        |
 |   #   | [134. 加油站](https://leetcode-cn.com/problems/gas-station/) | [C++](LeetCode/cpp/lc_0134.cpp) |            |        |
-|       |                                                              |                                 |            |        |
+|   #   | [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | [C++](LeetCode/cpp/lc_0121.cpp) |            |        |
 |       |                                                              |                                 |            |        |
 |       |                                                              |                                 |            |        |
 
@@ -193,12 +194,12 @@
 
 | Times | Title                                                        |               C++               | JavaScript | Python |
 | :---: | :----------------------------------------------------------- | :-----------------------------: | :--------: | :----: |
-|  ###  | [509. 斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/) | [C++](LeetCode/cpp/lc_0509.cpp) |            |        |
+| ####  | [509. 斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/) | [C++](LeetCode/cpp/lc_0509.cpp) |            |        |
 |  ###  | [1137. 第 N 个泰波那契数](https://leetcode-cn.com/problems/n-th-tribonacci-number/) | [C++](LeetCode/cpp/lc_1137.cpp) |            |        |
-|  ###  | [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [C++](LeetCode/cpp/lc_0070.cpp) |            |        |
+| ####  | [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [C++](LeetCode/cpp/lc_0070.cpp) |            |        |
 |  ##   | [139. 单词拆分](https://leetcode-cn.com/problems/word-break/) | [C++](LeetCode/cpp/lc_0139.cpp) |            |        |
 |   #   | [140. 单词拆分 II](https://leetcode-cn.com/problems/word-break-ii/) | [C++](LeetCode/cpp/lc_0140.cpp) |            |        |
-|  ##   | [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/) | [C++](LeetCode/cpp/lc_0322.cpp) |            |        |
+|  ###  | [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/) | [C++](LeetCode/cpp/lc_0322.cpp) |            |        |
 |  ##   | [518. 零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/) | [C++](LeetCode/cpp/lc_0518.cpp) |            |        |
 |  ##   | [62. 不同路径](https://leetcode-cn.com/problems/unique-paths/) | [C++](LeetCode/cpp/lc_0062.cpp) |            |        |
 |  ##   | [63. 不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/) | [C++](LeetCode/cpp/lc_0063.cpp) |            |        |
@@ -206,7 +207,7 @@
 |  ##   | [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle/) | [C++](LeetCode/cpp/lc_0120.cpp) |            |        |
 |  ##   | [96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/) | [C++](LeetCode/cpp/lc_0096.cpp) |            |        |
 |  ##   | [95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/) | [C++](LeetCode/cpp/lc_0095.cpp) |            |        |
-|  ###  | [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [C++](LeetCode/cpp/lc_0053.cpp) |            |        |
+| ####  | [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [C++](LeetCode/cpp/lc_0053.cpp) |            |        |
 |   #   | [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [C++](LeetCode/cpp/lc_0072.cpp) |            |        |
 |   #   | [238. 除自身以外数组的乘积](https://leetcode-cn.com/problems/product-of-array-except-self/) | [C++](LeetCode/cpp/lc_0238.cpp) |            |        |
 |   #   | [300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/) | [C++](LeetCode/cpp/lc_0300.cpp) |            |        |
@@ -261,12 +262,12 @@
 
 ## 其它
 
-| Times | Title                                                        |               C++               | JavaScript | Python |
-| :---: | :----------------------------------------------------------- | :-----------------------------: | :--------: | :----: |
-| ####  | [284. 窥探迭代器](https://leetcode-cn.com/problems/peeking-iterator/) | [C++](LeetCode/cpp/lc_0284.cpp) |            |        |
-|   #   |                                                              |                                 |            |        |
-|   #   |                                                              |                                 |            |        |
-|       |                                                              |                                 |            |        |
-|       |                                                              |                                 |            |        |
-|       |                                                              |                                 |            |        |
+| Title                                                        |               C++               | JavaScript | Python |
+| :----------------------------------------------------------- | :-----------------------------: | :--------: | :----: |
+| [284. 窥探迭代器](https://leetcode-cn.com/problems/peeking-iterator/) | [C++](LeetCode/cpp/lc_0284.cpp) |            |        |
+| [566. 重塑矩阵](https://leetcode-cn.com/problems/reshape-the-matrix/) | [C++](LeetCode/cpp/lc_0566.cpp) |            |        |
+| [118. 杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/) | [C++](LeetCode/cpp/lc_0118.cpp) |            |        |
+|                                                              |                                 |            |        |
+|                                                              |                                 |            |        |
+|                                                              |                                 |            |        |
 
