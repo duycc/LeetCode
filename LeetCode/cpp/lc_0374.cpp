@@ -4,12 +4,7 @@
  * @author   YongDu
  * @date     2021-09-11
  */
-/**
- * @file     guessNumber.cpp
- * @brief
- * @author   DuYong
- * @date     2021-03-12
- */
+
 /**
  * Forward declaration of guess API.
  * @param  num   your guess

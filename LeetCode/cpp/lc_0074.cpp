@@ -4,12 +4,7 @@
  * @author   YongDu
  * @date     2021-09-11
  */
-/**
- * @file     searchMatrix.cpp
- * @brief
- * @author   DuYong
- * @date     2021-03-12
- */
+
 class Solution {
 public:
   bool searchMatrix(vector<vector<int>> &matrix, int target) {

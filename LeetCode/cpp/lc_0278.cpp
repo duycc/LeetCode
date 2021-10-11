@@ -4,12 +4,7 @@
  * @author   YongDu
  * @date     2021-09-11
  */
-/**
- * @file     firstBadVersion.cpp
- * @brief
- * @author   DuYong
- * @date     2021-03-12
- */
+
 // The API isBadVersion is defined for you.
 // bool isBadVersion(int version);
 
