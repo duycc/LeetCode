@@ -11,38 +11,29 @@ public:
     if (k == 0 || head == nullptr) {
       return head;
     }
-
-    ListNode *pNode = head;
     int len = 0;
-    while (pNode) {
+    ListNode *node = head;
+    while (node) {
       len++;
-      pNode = pNode->next;
+      node = node->next;
     }
-
     k %= len;
     if (k == 0) {
       return head;
     }
 
-    ListNode *pCurr = head;
-    ListNode *pKthNode = head;
-
-    for (int i{}; i < k; ++i) {
-      if (!pCurr->next) {
-        return nullptr;
-      }
-      pCurr = pCurr->next;
+    ListNode *left = head;
+    ListNode *right = head;
+    while (k--) {
+      right = right->next;
     }
-
-    while (pCurr->next) {
-      pCurr = pCurr->next;
-      pKthNode = pKthNode->next;
+    while (right->next) {
+      right = right->next;
+      left = left->next;
     }
-
-    pCurr->next = head;
-    head = pKthNode->next;
-    pKthNode->next = nullptr;
-
+    right->next = head;
+    head = left->next;
+    left->next = nullptr;
     return head;
   }
 };

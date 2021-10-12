@@ -1,9 +1,10 @@
 /**
- * @file     reorderList.cpp
- * @brief
- * @author   DuYong
- * @date     2021-03-06
+ * @file     lc_0143.cpp
+ * @brief    https://leetcode-cn.com/problems/reorder-list/
+ * @author   YongDu
+ * @date     2021-10-12
  */
+
 class Solution {
 public:
   void reorderList(ListNode *head) {
