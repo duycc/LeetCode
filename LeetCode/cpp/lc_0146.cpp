@@ -9,39 +9,34 @@ class LRUCache {
   using CacheList = std::list<std::pair<int, int>>;
 
 public:
-  LRUCache(int capacity) : capacity(capacity) {}
+  LRUCache(int capacity_) : capacity(capacity_) {}
 
   int get(int key) {
-    int retVal = -1;
+    int ret = -1;
     auto &&iter = cacheMap.find(key);
     if (iter != cacheMap.end()) {
-      auto &needMove = iter->second;
-      retVal = needMove->second;
-      cacheList.emplace_front(std::move(*needMove));
-      cacheList.erase(needMove);
+      ret = iter->second->second;
+      cacheList.splice(cacheList.begin(), cacheList, iter->second);
       cacheMap[key] = cacheList.begin();
     }
-    return retVal;
+    return ret;
   }
 
   void put(int key, int value) {
     auto &&iter = cacheMap.find(key);
-    if (iter != cacheMap.end()) {
-      auto &needMove = iter->second;
-      needMove->second = value;
-      cacheList.emplace_front(std::move(*needMove));
-      cacheList.erase(needMove);
+    if (iter != cacheMap.end()) { // key存在
+      iter->second->second = value;
+      cacheList.splice(cacheList.begin(), cacheList, iter->second);
       cacheMap[key] = cacheList.begin();
       return;
     }
-    if (cacheMap.size() == static_cast<size_t>(capacity)) {
-      int needDelKey = cacheList.back().first;
+    // key不存在
+    if (cacheList.size() == capacity) {
+      cacheMap.erase(cacheList.back().first);
       cacheList.pop_back();
-      cacheMap.erase(needDelKey);
     }
     cacheList.emplace_front(std::make_pair(key, value));
     cacheMap[key] = cacheList.begin();
-    return;
   }
 
 private:
@@ -49,7 +44,6 @@ private:
   CacheList cacheList;
   std::unordered_map<int, CacheList::iterator> cacheMap;
 };
-
 /**
  * Your LRUCache object will be instantiated and called as such:
  * LRUCache* obj = new LRUCache(capacity);
