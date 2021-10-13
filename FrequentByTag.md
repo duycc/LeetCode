@@ -24,13 +24,13 @@
 
 | Times | Title                                                        |               C++               | JavaScript | Python |
 | :---: | :----------------------------------------------------------- | :-----------------------------: | :--------: | :----: |
-| ####  | [203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/) | [C++](LeetCode/cpp/lc_0203.cpp) |            |        |
+| ##### | [203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/) | [C++](LeetCode/cpp/lc_0203.cpp) |            |        |
 | ####  | [707. 设计链表](https://leetcode-cn.com/problems/design-linked-list/) | [C++](LeetCode/cpp/lc_0707.cpp) |            |        |
 | ####  | [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | [C++](LeetCode/cpp/lc_0024.cpp) |            |        |
-|  ###  | [83. 删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/) | [C++](LeetCode/cpp/lc_0083.cpp) |            |        |
+| ####  | [83. 删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/) | [C++](LeetCode/cpp/lc_0083.cpp) |            |        |
 |  ###  | [82. 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/) | [C++](LeetCode/cpp/lc_0082.cpp) |            |        |
 |  ###  | [61. 旋转链表](https://leetcode-cn.com/problems/rotate-list/) | [C++](LeetCode/cpp/lc_0061.cpp) |            |        |
-|  ###  | [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) | [C++](LeetCode/cpp/lc_0021.cpp) |            |        |
+| ####  | [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) | [C++](LeetCode/cpp/lc_0021.cpp) |            |        |
 |  ###  | [23. 合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/) | [C++](LeetCode/cpp/lc_0023.cpp) |            |        |
 |  ###  | [237. 删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/) | [C++](LeetCode/cpp/lc_0237.cpp) |            |        |
 |  ###  | [143. 重排链表](https://leetcode-cn.com/problems/reorder-list/) | [C++](LeetCode/cpp/lc_0143.cpp) |            |        |
@@ -43,11 +43,11 @@
 | ####  | [706. 设计哈希映射](https://leetcode-cn.com/problems/design-hashmap/) | [C++](LeetCode/cpp/lc_0706.cpp) |                                      |                                      |
 | ####  | [146. LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/) | [C++](LeetCode/cpp/lc_0146.cpp) |                                      |                                      |
 | ####  | [460. LFU 缓存](https://leetcode-cn.com/problems/lfu-cache/) | [C++](LeetCode/cpp/lc_0460.cpp) |                                      |                                      |
-| ####  | [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [C++](LeetCode/cpp/lc_0242.cpp) | [JS](LeetCode/javascript/lc_0242.js) | [Python](LeetCode/python/lc_0242.py) |
+| ##### | [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [C++](LeetCode/cpp/lc_0242.cpp) | [JS](LeetCode/javascript/lc_0242.js) | [Python](LeetCode/python/lc_0242.py) |
 | ####  | [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/) | [C++](LeetCode/cpp/lc_0349.cpp) |                                      |                                      |
 | ##### | [350. 两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [C++](LeetCode/cpp/lc_0350.cpp) |                                      |                                      |
 | ####  | [202. 快乐数](https://leetcode-cn.com/problems/happy-number/) | [C++](LeetCode/cpp/lc_0202.cpp) |                                      |                                      |
-| ####  | [383. 赎金信](https://leetcode-cn.com/problems/ransom-note/) | [C++](LeetCode/cpp/lc_0383.cpp) |                                      |                                      |
+| ##### | [383. 赎金信](https://leetcode-cn.com/problems/ransom-note/) | [C++](LeetCode/cpp/lc_0383.cpp) |                                      |                                      |
 | ##### | [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)     | [C++](LeetCode/cpp/lc_0001.cpp) | [JS](LeetCode/javascript/lc_0001.js) | [Python](LeetCode/python/lc_0001.py) |
 | ##### | [167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [C++](LeetCode/cpp/lc_0167.cpp) |                                      |                                      |
 | ####  | [454. 四数相加 II](https://leetcode-cn.com/problems/4sum-ii/) | [C++](LeetCode/cpp/lc_0454.cpp) |                                      |                                      |
@@ -57,6 +57,8 @@
 | ####  | [41. 缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/) | [C++](LeetCode/cpp/lc_0041.cpp) |                                      |                                      |
 | ##### | [217. 存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/) | [C++](LeetCode/cpp/lc_0217.cpp) |                                      |                                      |
 |       | [187. 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/) | [C++](LeetCode/cpp/lc_0187.cpp) |                                      |                                      |
+|       | [36. 有效的数独](https://leetcode-cn.com/problems/valid-sudoku/) | [C++](LeetCode/cpp/lc_0036.cpp) |                                      |                                      |
+|       | [73. 矩阵置零](https://leetcode-cn.com/problems/set-matrix-zeroes/) | [C++](LeetCode/cpp/lc_0073.cpp) |                                      |                                      |
 
 ## 字符串
 
@@ -77,10 +79,10 @@
 | :---: | :----------------------------------------------------------- | :-----------------------------: | :----------------------------------: | :----------------------------------: |
 |  ##   | [27. 移除元素](https://leetcode-cn.com/problems/remove-element/) | [C++](LeetCode/cpp/lc_0027.cpp) | [JS](LeetCode/javascript/lc_0027.js) | [Python](LeetCode/python/lc_0027.py) |
 |  ##   | [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/) | [C++](LeetCode/cpp/lc_0344.cpp) |                                      |                                      |
-|  ##   | [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/) | [C++](LeetCode/cpp/lc_0206.cpp) | [JS](LeetCode/javascript/lc_0206.js) |                                      |
+|  ###  | [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/) | [C++](LeetCode/cpp/lc_0206.cpp) | [JS](LeetCode/javascript/lc_0206.js) |                                      |
 |   #   | [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/) | [C++](LeetCode/cpp/lc_0876.cpp) |                                      |                                      |
 |  ##   | [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) | [C++](LeetCode/cpp/lc_0019.cpp) |                                      |                                      |
-|   #   | [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/) | [C++](LeetCode/cpp/lc_0141.cpp) |                                      |                                      |
+|  ##   | [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/) | [C++](LeetCode/cpp/lc_0141.cpp) |                                      |                                      |
 |  ##   | [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/) | [C++](LeetCode/cpp/lc_0142.cpp) |                                      |                                      |
 | ####  | [15. 三数之和](https://leetcode-cn.com/problems/3sum/)       | [C++](LeetCode/cpp/lc_0015.cpp) |                                      |                                      |
 |  ###  | [18. 四数之和](https://leetcode-cn.com/problems/4sum/)       | [C++](LeetCode/cpp/lc_0018.cpp) |                                      |                                      |
@@ -92,9 +94,9 @@
 | Times | Title                                                        |               C++               | JavaScript | Python |
 | :---: | :----------------------------------------------------------- | :-----------------------------: | :--------: | :----: |
 |   #   | [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)   | [C++](LeetCode/cpp/lc_0155.cpp) |            |        |
-|   #   | [232. 用栈实现队列](https://leetcode-cn.com/problems/implement-queue-using-stacks/) | [C++](LeetCode/cpp/lc_0232.cpp) |            |        |
+|  ##   | [232. 用栈实现队列](https://leetcode-cn.com/problems/implement-queue-using-stacks/) | [C++](LeetCode/cpp/lc_0232.cpp) |            |        |
 |   #   | [225. 用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/) | [C++](LeetCode/cpp/lc_0225.cpp) |            |        |
-|   #   | [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [C++](LeetCode/cpp/lc_0020.cpp) |            |        |
+|  ##   | [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [C++](LeetCode/cpp/lc_0020.cpp) |            |        |
 |   #   | [150. 逆波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/) | [C++](LeetCode/cpp/lc_0150.cpp) |            |        |
 |   #   | [1047. 删除字符串中的所有相邻重复项](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/) | [C++](LeetCode/cpp/lc_1047.cpp) |            |        |
 |  ##   | [347. 前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/) | [C++](LeetCode/cpp/lc_0347.cpp) |            |        |
