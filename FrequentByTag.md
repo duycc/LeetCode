@@ -64,8 +64,8 @@
 
 | Times | Title                                                        |               C++               |              JavaScript              |                Python                |
 | :---: | :----------------------------------------------------------- | :-----------------------------: | :----------------------------------: | :----------------------------------: |
-|  ###  | [189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/) | [C++](LeetCode/cpp/lc_0189.cpp) |                                      |                                      |
-| ####  | [541. 反转字符串 II](https://leetcode-cn.com/problems/reverse-string-ii/) | [C++](LeetCode/cpp/lc_0541.cpp) |                                      |                                      |
+| ####  | [189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/) | [C++](LeetCode/cpp/lc_0189.cpp) |                                      |                                      |
+| ##### | [541. 反转字符串 II](https://leetcode-cn.com/problems/reverse-string-ii/) | [C++](LeetCode/cpp/lc_0541.cpp) |                                      |                                      |
 |  ##   | [151. 翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/) | [C++](LeetCode/cpp/lc_0151.cpp) |                                      | [Python](LeetCode/python/lc_0151.py) |
 |  ###  | [557. 反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/) | [C++](LeetCode/cpp/lc_0557.cpp) | [JS](LeetCode/javascript/lc_0557.js) | [Python](LeetCode/python/lc_0557.py) |
 |  ###  | [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [C++](LeetCode/cpp/lc_0028.cpp) | [JS](LeetCode/javascript/lc_0028.js) |                                      |
@@ -157,6 +157,7 @@
 |  ###  | [437. 路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/) | [C++](LeetCode/cpp/lc_0437.cpp) |                                      |                                      |
 | ####  | [235. 二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [C++](LeetCode/cpp/lc_0235.cpp) |                                      |                                      |
 | ####  | [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [C++](LeetCode/cpp/lc_0236.cpp) |                                      |                                      |
+|       | [653. 两数之和 IV - 输入 BST](https://leetcode-cn.com/problems/two-sum-iv-input-is-a-bst/) | [C++](LeetCode/cpp/lc_0653.cpp) |                                      |                                      |
 
 ## 回溯算法
 
@@ -185,10 +186,13 @@
 
 | Times | Title                                                        |               C++               | JavaScript | Python |
 | :---: | :----------------------------------------------------------- | :-----------------------------: | :--------: | :----: |
-|   #   | [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)  | [C++](LeetCode/cpp/lc_0055.cpp) |            |        |
-|   #   | [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) | [C++](LeetCode/cpp/lc_0045.cpp) |            |        |
+|   #   | [455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/) | [C++](LeetCode/cpp/lc_0455.cpp) |            |        |
+|  ##   | [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)  | [C++](LeetCode/cpp/lc_0055.cpp) |            |        |
+|  ##   | [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) | [C++](LeetCode/cpp/lc_0045.cpp) |            |        |
 |   #   | [134. 加油站](https://leetcode-cn.com/problems/gas-station/) | [C++](LeetCode/cpp/lc_0134.cpp) |            |        |
-|   #   | [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | [C++](LeetCode/cpp/lc_0121.cpp) |            |        |
+|  ##   | [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | [C++](LeetCode/cpp/lc_0121.cpp) |            |        |
+|   #   | [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) | [C++](LeetCode/cpp/lc_0122.cpp) |            |        |
+|   #   | [376. 摆动序列](https://leetcode-cn.com/problems/wiggle-subsequence/) | [C++](LeetCode/cpp/lc_0376.cpp) |            |        |
 
 ## 动态规划
 
