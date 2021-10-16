@@ -7,18 +7,18 @@
 class Solution {
 public:
   int findRepeatNumber(vector<int> &nums) {
-    int result;
-    vector<bool> exist(nums.size(), false);
-
-    for (auto &num : nums) {
-      if (exist[num]) {
-        result = num;
-        break;
-      } else {
-        exist[num] = true;
-      }
+    if (nums.empty()) {
+      return 0;
     }
-
-    return result;
+    std::unordered_set<int> numSet;
+    int val = 0;
+    for (auto num : nums) {
+      if (numSet.find(num) != numSet.end()) {
+        val = num;
+        break;
+      }
+      numSet.emplace(num);
+    }
+    return val;
   }
 };
