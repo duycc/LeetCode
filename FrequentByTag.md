@@ -197,7 +197,13 @@
 |   #   | [135. 分发糖果](https://leetcode-cn.com/problems/candy/)     | [C++](LeetCode/cpp/lc_0135.cpp) |            |        |
 |   #   | [860. 柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/) | [C++](LeetCode/cpp/lc_0860.cpp) |            |        |
 |   #   | [406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/) | [C++](LeetCode/cpp/lc_0406.cpp) |            |        |
-|       |                                                              |                                 |            |        |
+|   #   | [452. 用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [C++](LeetCode/cpp/lc_0452.cpp) |            |        |
+|   #   | [435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/) | [C++](LeetCode/cpp/lc_0435.cpp) |            |        |
+|   #   | [763. 划分字母区间](https://leetcode-cn.com/problems/partition-labels/) | [C++](LeetCode/cpp/lc_0763.cpp) |            |        |
+|   #   | [56. 合并区间](https://leetcode-cn.com/problems/merge-intervals/) | [C++](LeetCode/cpp/lc_0056.cpp) |            |        |
+|   #   | [738. 单调递增的数字](https://leetcode-cn.com/problems/monotone-increasing-digits/) | [C++](LeetCode/cpp/lc_0738.cpp) |            |        |
+|   #   | [714. 买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [C++](LeetCode/cpp/lc_0714.cpp) |            |        |
+|   #   | [968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/) | [C++](LeetCode/cpp/lc_0968.cpp) |            |        |
 
 ## 动态规划
 
