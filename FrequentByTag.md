@@ -62,32 +62,32 @@
 
 ## 字符串
 
-| Times | Title                                                        |               C++               |              JavaScript              |                Python                |
-| :---: | :----------------------------------------------------------- | :-----------------------------: | :----------------------------------: | :----------------------------------: |
-| ####  | [189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/) | [C++](LeetCode/cpp/lc_0189.cpp) |                                      |                                      |
-| ##### | [541. 反转字符串 II](https://leetcode-cn.com/problems/reverse-string-ii/) | [C++](LeetCode/cpp/lc_0541.cpp) |                                      |                                      |
-|  ##   | [151. 翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/) | [C++](LeetCode/cpp/lc_0151.cpp) |                                      | [Python](LeetCode/python/lc_0151.py) |
-|  ###  | [557. 反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/) | [C++](LeetCode/cpp/lc_0557.cpp) | [JS](LeetCode/javascript/lc_0557.js) | [Python](LeetCode/python/lc_0557.py) |
-|  ###  | [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [C++](LeetCode/cpp/lc_0028.cpp) | [JS](LeetCode/javascript/lc_0028.js) |                                      |
-|  ###  | [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [C++](LeetCode/cpp/lc_0459.cpp) |                                      |                                      |
-|  ##   | [482. 密钥格式化](https://leetcode-cn.com/problems/license-key-formatting/) | [C++](LeetCode/cpp/lc_0482.cpp) |                                      |                                      |
-|       | [434. 字符串中的单词数](https://leetcode-cn.com/problems/number-of-segments-in-a-string/) |                                 |                                      |                                      |
+| Title                                                        |               C++               |              JavaScript              |                Python                |
+| :----------------------------------------------------------- | :-----------------------------: | :----------------------------------: | :----------------------------------: |
+| [189. 旋转数组](https://leetcode-cn.com/problems/rotate-array/) | [C++](LeetCode/cpp/lc_0189.cpp) |                                      |                                      |
+| [541. 反转字符串 II](https://leetcode-cn.com/problems/reverse-string-ii/) | [C++](LeetCode/cpp/lc_0541.cpp) |                                      |                                      |
+| [151. 翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/) | [C++](LeetCode/cpp/lc_0151.cpp) |                                      | [Python](LeetCode/python/lc_0151.py) |
+| [557. 反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/) | [C++](LeetCode/cpp/lc_0557.cpp) | [JS](LeetCode/javascript/lc_0557.js) | [Python](LeetCode/python/lc_0557.py) |
+| [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [C++](LeetCode/cpp/lc_0028.cpp) | [JS](LeetCode/javascript/lc_0028.js) |                                      |
+| [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/) | [C++](LeetCode/cpp/lc_0459.cpp) |                                      |                                      |
+| [482. 密钥格式化](https://leetcode-cn.com/problems/license-key-formatting/) | [C++](LeetCode/cpp/lc_0482.cpp) |                                      |                                      |
+| [434. 字符串中的单词数](https://leetcode-cn.com/problems/number-of-segments-in-a-string/) |                                 |                                      |                                      |
 
 ## 双指针法
 
-| Times | Title                                                        |               C++               |              JavaScript              |                Python                |
-| :---: | :----------------------------------------------------------- | :-----------------------------: | :----------------------------------: | :----------------------------------: |
-|  ##   | [27. 移除元素](https://leetcode-cn.com/problems/remove-element/) | [C++](LeetCode/cpp/lc_0027.cpp) | [JS](LeetCode/javascript/lc_0027.js) | [Python](LeetCode/python/lc_0027.py) |
-|  ##   | [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/) | [C++](LeetCode/cpp/lc_0344.cpp) |                                      |                                      |
-|  ###  | [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/) | [C++](LeetCode/cpp/lc_0206.cpp) | [JS](LeetCode/javascript/lc_0206.js) |                                      |
-|   #   | [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/) | [C++](LeetCode/cpp/lc_0876.cpp) |                                      |                                      |
-|  ##   | [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) | [C++](LeetCode/cpp/lc_0019.cpp) |                                      |                                      |
-|  ##   | [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/) | [C++](LeetCode/cpp/lc_0141.cpp) |                                      |                                      |
-|  ##   | [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/) | [C++](LeetCode/cpp/lc_0142.cpp) |                                      |                                      |
-| ####  | [15. 三数之和](https://leetcode-cn.com/problems/3sum/)       | [C++](LeetCode/cpp/lc_0015.cpp) |                                      |                                      |
-|  ###  | [18. 四数之和](https://leetcode-cn.com/problems/4sum/)       | [C++](LeetCode/cpp/lc_0018.cpp) |                                      |                                      |
-|  ##   | [16. 最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/) | [C++](LeetCode/cpp/lc_0016.cpp) |                                      |                                      |
-|  ##   | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [C++](LeetCode/cpp/lc_0075.cpp) |                                      |                                      |
+| Title                                                        |               C++               |              JavaScript              |                Python                |
+| :----------------------------------------------------------- | :-----------------------------: | :----------------------------------: | :----------------------------------: |
+| [27. 移除元素](https://leetcode-cn.com/problems/remove-element/) | [C++](LeetCode/cpp/lc_0027.cpp) | [JS](LeetCode/javascript/lc_0027.js) | [Python](LeetCode/python/lc_0027.py) |
+| [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/) | [C++](LeetCode/cpp/lc_0344.cpp) |                                      |                                      |
+| [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/) | [C++](LeetCode/cpp/lc_0206.cpp) | [JS](LeetCode/javascript/lc_0206.js) |                                      |
+| [876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/) | [C++](LeetCode/cpp/lc_0876.cpp) |                                      |                                      |
+| [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) | [C++](LeetCode/cpp/lc_0019.cpp) |                                      |                                      |
+| [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/) | [C++](LeetCode/cpp/lc_0141.cpp) |                                      |                                      |
+| [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/) | [C++](LeetCode/cpp/lc_0142.cpp) |                                      |                                      |
+| [15. 三数之和](https://leetcode-cn.com/problems/3sum/)       | [C++](LeetCode/cpp/lc_0015.cpp) |                                      |                                      |
+| [18. 四数之和](https://leetcode-cn.com/problems/4sum/)       | [C++](LeetCode/cpp/lc_0018.cpp) |                                      |                                      |
+| [16. 最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/) | [C++](LeetCode/cpp/lc_0016.cpp) |                                      |                                      |
+| [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [C++](LeetCode/cpp/lc_0075.cpp) |                                      |                                      |
 
 ## 栈与队列
 
