@@ -10,24 +10,23 @@ public:
     if (obstacleGrid.empty()) {
       return 0;
     }
-    int row = obstacleGrid.size();
-    int col = obstacleGrid[0].size();
-    vector<vector<int>> result(row, vector<int>(col, 0));
-
-    for (int i = 0; i < row && obstacleGrid[i][0] == 0; ++i) {
-      result[i][0] = 1;
+    int rows = obstacleGrid.size();
+    int cols = obstacleGrid[0].size();
+    vector<vector<int>> dp(rows, vector<int>(cols, 0));
+    for (int i = 0; i < rows && obstacleGrid[i][0] == 0; ++i) {
+      dp[i][0] = 1;
     }
-    for (int i = 0; i < col && obstacleGrid[0][i] == 0; ++i) {
-      result[0][i] = 1;
+    for (int i = 0; i < cols && obstacleGrid[0][i] == 0; ++i) {
+      dp[0][i] = 1;
     }
 
-    for (int i = 1; i < row; ++i) {
-      for (int j = 1; j < col; ++j) {
+    for (int i = 1; i < rows; ++i) {
+      for (int j = 1; j < cols; ++j) {
         if (obstacleGrid[i][j] != 1) {
-          result[i][j] = result[i - 1][j] + result[i][j - 1];
+          dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
         }
       }
     }
-    return result[row - 1][col - 1];
+    return dp[rows - 1][cols - 1];
   }
 };
