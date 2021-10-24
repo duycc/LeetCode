@@ -88,6 +88,8 @@
 | [18. 四数之和](https://leetcode-cn.com/problems/4sum/)       | [C++](LeetCode/cpp/lc_0018.cpp) |                                      |                                      |
 | [16. 最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/) | [C++](LeetCode/cpp/lc_0016.cpp) |                                      |                                      |
 | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [C++](LeetCode/cpp/lc_0075.cpp) |                                      |                                      |
+| [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [C++](LeetCode/cpp/lc_0003.cpp) |                                      |                                      |
+| [567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) | [C++](LeetCode/cpp/lc_0567.cpp) |                                      |                                      |
 
 ## 栈与队列
 
@@ -216,6 +218,10 @@
 |   #   | [343. 整数拆分](https://leetcode-cn.com/problems/integer-break/) | [C++](LeetCode/cpp/lc_0343.cpp) |            |        |
 |  ###  | [139. 单词拆分](https://leetcode-cn.com/problems/word-break/) | [C++](LeetCode/cpp/lc_0139.cpp) |            |        |
 |  ##   | [140. 单词拆分 II](https://leetcode-cn.com/problems/word-break-ii/) | [C++](LeetCode/cpp/lc_0140.cpp) |            |        |
+|   #   | [416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/) | [C++](LeetCode/cpp/lc_0416.cpp) |            |        |
+|   #   | [1049. 最后一块石头的重量 II](https://leetcode-cn.com/problems/last-stone-weight-ii/) | [C++](LeetCode/cpp/lc_1049.cpp) |            |        |
+|   #   | [494. 目标和](https://leetcode-cn.com/problems/target-sum/)  | [C++](LeetCode/cpp/lc_0494.cpp) |            |        |
+|   #   | [474. 一和零](https://leetcode-cn.com/problems/ones-and-zeroes/) | [C++](LeetCode/cpp/lc_0474.cpp) |            |        |
 | ####  | [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/) | [C++](LeetCode/cpp/lc_0322.cpp) |            |        |
 |  ###  | [518. 零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/) | [C++](LeetCode/cpp/lc_0518.cpp) |            |        |
 | ####  | [62. 不同路径](https://leetcode-cn.com/problems/unique-paths/) | [C++](LeetCode/cpp/lc_0062.cpp) |            |        |
@@ -223,7 +229,7 @@
 |  ###  | [64. 最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/) | [C++](LeetCode/cpp/lc_0064.cpp) |            |        |
 |  ###  | [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle/) | [C++](LeetCode/cpp/lc_0120.cpp) |            |        |
 |  ###  | [96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/) | [C++](LeetCode/cpp/lc_0096.cpp) |            |        |
-|  ###  | [95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/) | [C++](LeetCode/cpp/lc_0095.cpp) |            |        |
+| ####  | [95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/) | [C++](LeetCode/cpp/lc_0095.cpp) |            |        |
 | ##### | [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [C++](LeetCode/cpp/lc_0053.cpp) |            |        |
 |  ##   | [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [C++](LeetCode/cpp/lc_0072.cpp) |            |        |
 |  ##   | [238. 除自身以外数组的乘积](https://leetcode-cn.com/problems/product-of-array-except-self/) | [C++](LeetCode/cpp/lc_0238.cpp) |            |        |
@@ -279,4 +285,5 @@
 | [284. 窥探迭代器](https://leetcode-cn.com/problems/peeking-iterator/) | [C++](LeetCode/cpp/lc_0284.cpp) |            |        |
 | [566. 重塑矩阵](https://leetcode-cn.com/problems/reshape-the-matrix/) | [C++](LeetCode/cpp/lc_0566.cpp) |            |        |
 | [118. 杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/) | [C++](LeetCode/cpp/lc_0118.cpp) |            |        |
+| [733. 图像渲染](https://leetcode-cn.com/problems/flood-fill/) | [C++](LeetCode/cpp/lc_0733.cpp) |            |        |
 
