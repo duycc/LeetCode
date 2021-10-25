@@ -95,11 +95,11 @@
 
 | Times | Title                                                        |               C++               | JavaScript | Python |
 | :---: | :----------------------------------------------------------- | :-----------------------------: | :--------: | :----: |
-|   #   | [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)   | [C++](LeetCode/cpp/lc_0155.cpp) |            |        |
-|  ##   | [232. 用栈实现队列](https://leetcode-cn.com/problems/implement-queue-using-stacks/) | [C++](LeetCode/cpp/lc_0232.cpp) |            |        |
-|   #   | [225. 用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/) | [C++](LeetCode/cpp/lc_0225.cpp) |            |        |
-|  ##   | [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [C++](LeetCode/cpp/lc_0020.cpp) |            |        |
-|   #   | [150. 逆波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/) | [C++](LeetCode/cpp/lc_0150.cpp) |            |        |
+| ##### | [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)   | [C++](LeetCode/cpp/lc_0155.cpp) |            |        |
+| ##### | [232. 用栈实现队列](https://leetcode-cn.com/problems/implement-queue-using-stacks/) | [C++](LeetCode/cpp/lc_0232.cpp) |            |        |
+| ##### | [225. 用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/) | [C++](LeetCode/cpp/lc_0225.cpp) |            |        |
+| ##### | [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [C++](LeetCode/cpp/lc_0020.cpp) |            |        |
+| ##### | [150. 逆波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/) | [C++](LeetCode/cpp/lc_0150.cpp) |            |        |
 |   #   | [1047. 删除字符串中的所有相邻重复项](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/) | [C++](LeetCode/cpp/lc_1047.cpp) |            |        |
 |  ##   | [347. 前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/) | [C++](LeetCode/cpp/lc_0347.cpp) |            |        |
 |  ##   | [692. 前K个高频单词](https://leetcode-cn.com/problems/top-k-frequent-words/) | [C++](LeetCode/cpp/lc_0692.cpp) |            |        |

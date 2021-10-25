@@ -4,39 +4,45 @@
  * @author   YongDu
  * @date     2021-09-10
  */
-
 class MyQueue {
 public:
-  /** Initialize your data structure here. */
   MyQueue() {}
 
-  /** Push element x to the back of queue. */
-  void push(int x) { stk_in_.push(x); }
+  void push(int x) { inStk.push(x); }
 
-  /** Removes the element from in front of queue and returns that element. */
   int pop() {
-    if (stk_out_.empty()) {
-      while (!stk_in_.empty()) {
-        stk_out_.push(stk_in_.top());
-        stk_in_.pop();
+    if (this->empty()) {
+      return -1;
+    }
+    if (outStk.empty()) {
+      while (!inStk.empty()) {
+        outStk.push(inStk.top());
+        inStk.pop();
       }
     }
-    int result = stk_out_.top();
-    stk_out_.pop();
-    return result;
-  }
-
-  /** Get the front element. */
-  int peek() {
-    int res = this->pop();
-    stk_out_.push(res);
+    int res = outStk.top();
+    outStk.pop();
     return res;
   }
 
-  /** Returns whether the queue is empty. */
-  bool empty() { return stk_in_.empty() && stk_out_.empty(); }
+  int peek() {
+    int res = this->pop();
+    outStk.push(res);
+    return res;
+  }
+
+  bool empty() { return inStk.empty() && outStk.empty(); }
 
 private:
-  std::stack<int> stk_in_;
-  std::stack<int> stk_out_;
+  std::stack<int> inStk;
+  std::stack<int> outStk;
 };
+
+/**
+ * Your MyQueue object will be instantiated and called as such:
+ * MyQueue* obj = new MyQueue();
+ * obj->push(x);
+ * int param_2 = obj->pop();
+ * int param_3 = obj->peek();
+ * bool param_4 = obj->empty();
+ */

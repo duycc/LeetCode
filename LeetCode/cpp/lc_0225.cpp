@@ -5,70 +5,73 @@
  * @date     2021-09-11
  */
 
-/*----- 两个队列实现 -----*/
+//===------------------------- [Two Queue] --------------------------------===//
+// 两个队列实现
+//===----------------------------------------------------------------------===//
 class MyStack {
 public:
-  /** Initialize your data structure here. */
   MyStack() {}
 
-  /** Push element x onto stack. */
-  void push(int x) { que_data_.push(x); }
+  void push(int x) { dataQue.push(x); }
 
-  /** Removes the element on top of the stack and returns that element. */
   int pop() {
-    int size = que_data_.size();
-    size--; // 需要留下最后一个元素
+    int size = dataQue.size();
+    size--;
     while (size--) {
-      que_transfer_.push(que_data_.front());
-      que_data_.pop();
+      helpQue.push(dataQue.front());
+      dataQue.pop();
     }
-    int res = que_data_.front();
-    que_data_.pop();
-    que_data_ = que_transfer_;
-    while (!que_transfer_.empty()) {
-      que_transfer_.pop();
+    int res = dataQue.front();
+    dataQue.pop();
+    dataQue = helpQue;
+    while (!helpQue.empty()) {
+      helpQue.pop();
     }
     return res;
   }
 
-  /** Get the top element. */
-  int top() { return que_data_.back(); }
+  int top() { return dataQue.back(); }
 
-  /** Returns whether the stack is empty. */
-  bool empty() { return que_data_.empty(); }
+  bool empty() { return dataQue.empty(); }
 
 private:
-  std::queue<int> que_data_;
-  std::queue<int> que_transfer_;
+  std::queue<int> dataQue;
+  std::queue<int> helpQue;
 };
 
-/*----- 一个队列实现 -----*/
+//===------------------------- [One Queue] --------------------------------===//
+// 一个队列实现
+//===----------------------------------------------------------------------===//
 class MyStack {
 public:
-  /** Initialize your data structure here. */
   MyStack() {}
 
-  /** Push element x onto stack. */
-  void push(int x) { que_data_.push(x); }
+  void push(int x) { dataQue.push(x); }
 
-  /** Removes the element on top of the stack and returns that element. */
   int pop() {
-    int size = que_data_.size();
-    while (--size) { // 注意是不能是 size--
-      que_data_.push(que_data_.front());
-      que_data_.pop();
+    int size = dataQue.size();
+    while (--size) {
+      dataQue.push(dataQue.front());
+      dataQue.pop();
     }
-    int res = que_data_.front();
-    que_data_.pop();
+    int res = dataQue.front();
+    dataQue.pop();
     return res;
   }
 
-  /** Get the top element. */
-  int top() { return que_data_.back(); }
+  int top() { return dataQue.back(); }
 
-  /** Returns whether the stack is empty. */
-  bool empty() { return que_data_.empty(); }
+  bool empty() { return dataQue.empty(); }
 
 private:
-  std::queue<int> que_data_;
+  std::queue<int> dataQue;
 };
+
+/**
+ * Your MyStack object will be instantiated and called as such:
+ * MyStack* obj = new MyStack();
+ * obj->push(x);
+ * int param_2 = obj->pop();
+ * int param_3 = obj->top();
+ * bool param_4 = obj->empty();
+ */

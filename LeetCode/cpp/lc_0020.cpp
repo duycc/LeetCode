@@ -4,24 +4,23 @@
  * @author   YongDu
  * @date     2021-09-10
  */
-
 class Solution {
 public:
   bool isValid(string s) {
-    std::stack<int> brackets;
-    for (auto &brace : s) {
-      if ('(' == brace) {
-        brackets.push(')');
-      } else if ('{' == brace) {
-        brackets.push('}');
-      } else if ('[' == brace) {
-        brackets.push(']');
-      } else if (brackets.empty() || brackets.top() != brace) {
-        return false;
+    std::stack<char> stk;
+    for (auto ch : s) {
+      if (ch == '[') {
+        stk.push(']');
+      } else if (ch == '(') {
+        stk.push(')');
+      } else if (ch == '{') {
+        stk.push('}');
+      } else if (stk.empty() || ch != stk.top()) {
+        return false; // 先判断空，否则有可能top()解引用失败
       } else {
-        brackets.pop();
+        stk.pop();
       }
     }
-    return brackets.empty();
+    return stk.empty();
   }
 };

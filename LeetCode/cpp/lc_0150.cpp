@@ -9,17 +9,17 @@ public:
   int evalRPN(vector<string> &tokens) {
     std::stack<int> operands;
     for (auto &token : tokens) {
-      if ("+" == token || "-" == token || "*" == token || "/" == token) {
+      if (token == "+" || token == "-" || token == "*" || token == "/") {
         int rhs = operands.top();
         operands.pop();
         int lhs = operands.top();
         operands.pop();
 
-        if ("+" == token) {
+        if (token == "+") {
           operands.push(lhs + rhs);
-        } else if ("-" == token) {
+        } else if (token == "-") {
           operands.push(lhs - rhs);
-        } else if ("*" == token) {
+        } else if (token == "*") {
           operands.push(lhs * rhs);
         } else {
           operands.push(lhs / rhs);
