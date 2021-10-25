@@ -1,24 +1,24 @@
 ## 数组
 
-| Title                                                        |               C++               |              JavaScript              |                Python                |
-| :----------------------------------------------------------- | :-----------------------------: | :----------------------------------: | :----------------------------------: |
-| [704. 二分查找](https://leetcode-cn.com/problems/binary-search/) | [C++](LeetCode/cpp/lc_0704.cpp) |                                      |                                      |
-| [367. 有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/) | [C++](LeetCode/cpp/lc_0367.cpp) |                                      |                                      |
-| [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)    | [C++](LeetCode/cpp/lc_0069.cpp) |                                      |                                      |
-| [35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [C++](LeetCode/cpp/lc_0035.cpp) |                                      |                                      |
-| [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [C++](LeetCode/cpp/lc_0034.cpp) |                                      |                                      |
-| [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [C++](LeetCode/cpp/lc_0026.cpp) |                                      |                                      |
-| [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/) | [C++](LeetCode/cpp/lc_0283.cpp) |                                      |                                      |
-| [844. 比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/) | [C++](LeetCode/cpp/lc_0844.cpp) |                                      |                                      |
-| [977. 有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/) | [C++](LeetCode/cpp/lc_0977.cpp) |                                      | [Python](LeetCode/python/lc_0977.py) |
-| [209. 长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/) | [C++](LeetCode/cpp/lc_0209.cpp) |                                      | [Python](LeetCode/python/lc_0209.py) |
-| [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) | [C++](LeetCode/cpp/lc_0076.cpp) |                                      |                                      |
-| [904. 水果成篮](https://leetcode-cn.com/problems/fruit-into-baskets/) | [C++](LeetCode/cpp/lc_0904.cpp) |                                      |                                      |
-| [54. 螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/) | [C++](LeetCode/cpp/lc_0054.cpp) |                                      |                                      |
-| [59. 螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/) | [C++](LeetCode/cpp/lc_0059.cpp) |                                      |                                      |
-| [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [C++](LeetCode/cpp/lc_0088.cpp) | [JS](LeetCode/javascript/lc_0088.js) | [Python](LeetCode/python/lc_0088.py) |
-| [414. 第三大的数](https://leetcode-cn.com/problems/third-maximum-number/) | [C++](LeetCode/cpp/lc_0414.cpp) | [JS](LeetCode/javascript/lc_0414.js) |                                      |
-| [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/) | [C++](LeetCode/cpp/lc_0152.cpp) |                                      |                                      |
+| Title                                                        |               C++               |              JavaScript              |              Python              |
+| :----------------------------------------------------------- | :-----------------------------: | :----------------------------------: | :------------------------------: |
+| [704. 二分查找](https://leetcode-cn.com/problems/binary-search/) | [C++](LeetCode/cpp/lc_0704.cpp) |                                      | [Py](LeetCode/python/lc_0704.py) |
+| [367. 有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/) | [C++](LeetCode/cpp/lc_0367.cpp) |                                      | [Py](LeetCode/python/lc_0367.py) |
+| [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)    | [C++](LeetCode/cpp/lc_0069.cpp) |                                      | [Py](LeetCode/python/lc_0069.py) |
+| [35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [C++](LeetCode/cpp/lc_0035.cpp) |                                      | [Py](LeetCode/python/lc_0035.py) |
+| [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [C++](LeetCode/cpp/lc_0034.cpp) |                                      |                                  |
+| [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [C++](LeetCode/cpp/lc_0026.cpp) |                                      |                                  |
+| [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/) | [C++](LeetCode/cpp/lc_0283.cpp) |                                      |                                  |
+| [844. 比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/) | [C++](LeetCode/cpp/lc_0844.cpp) |                                      |                                  |
+| [977. 有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/) | [C++](LeetCode/cpp/lc_0977.cpp) |                                      | [Py](LeetCode/python/lc_0977.py) |
+| [209. 长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/) | [C++](LeetCode/cpp/lc_0209.cpp) |                                      | [Py](LeetCode/python/lc_0209.py) |
+| [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) | [C++](LeetCode/cpp/lc_0076.cpp) |                                      |                                  |
+| [904. 水果成篮](https://leetcode-cn.com/problems/fruit-into-baskets/) | [C++](LeetCode/cpp/lc_0904.cpp) |                                      |                                  |
+| [54. 螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/) | [C++](LeetCode/cpp/lc_0054.cpp) |                                      |                                  |
+| [59. 螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/) | [C++](LeetCode/cpp/lc_0059.cpp) |                                      |                                  |
+| [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [C++](LeetCode/cpp/lc_0088.cpp) | [JS](LeetCode/javascript/lc_0088.js) | [Py](LeetCode/python/lc_0088.py) |
+| [414. 第三大的数](https://leetcode-cn.com/problems/third-maximum-number/) | [C++](LeetCode/cpp/lc_0414.cpp) | [JS](LeetCode/javascript/lc_0414.js) |                                  |
+| [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/) | [C++](LeetCode/cpp/lc_0152.cpp) |                                      |                                  |
 
 ## 链表
 
