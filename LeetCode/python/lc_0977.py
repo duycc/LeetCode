@@ -8,18 +8,16 @@
 
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        n = len(nums)
-        i, j, k = 0, n - 1, n - 1
-        ans = [-1] * n
-
-        while i <= j:
-            lm = nums[i] ** 2
-            rm = nums[j] ** 2
-            if lm > rm:
-                ans[k] = lm
-                i += 1
+        l, r, k = 0, len(nums) - 1, len(nums) - 1
+        res = [-1] * len(nums)
+        while l <= r:
+            lpro = nums[l] ** 2
+            rpro = nums[r] ** 2
+            if lpro > rpro:
+                res[k] = lpro
+                l += 1
             else:
-                ans[k] = rm
-                j -= 1
+                res[k] = rpro
+                r -= 1
             k -= 1
-        return ans
+        return res

@@ -6,10 +6,10 @@
 | [367. 有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/) | [C++](LeetCode/cpp/lc_0367.cpp) |                                      | [Py](LeetCode/python/lc_0367.py) |
 | [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)    | [C++](LeetCode/cpp/lc_0069.cpp) |                                      | [Py](LeetCode/python/lc_0069.py) |
 | [35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [C++](LeetCode/cpp/lc_0035.cpp) |                                      | [Py](LeetCode/python/lc_0035.py) |
-| [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [C++](LeetCode/cpp/lc_0034.cpp) |                                      |                                  |
-| [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [C++](LeetCode/cpp/lc_0026.cpp) |                                      |                                  |
-| [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/) | [C++](LeetCode/cpp/lc_0283.cpp) |                                      |                                  |
-| [844. 比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/) | [C++](LeetCode/cpp/lc_0844.cpp) |                                      |                                  |
+| [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [C++](LeetCode/cpp/lc_0034.cpp) |                                      | [Py](LeetCode/python/lc_0034.py) |
+| [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [C++](LeetCode/cpp/lc_0026.cpp) |                                      | [Py](LeetCode/python/lc_0026.py) |
+| [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/) | [C++](LeetCode/cpp/lc_0283.cpp) |                                      | [Py](LeetCode/python/lc_0283.py) |
+| [844. 比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/) | [C++](LeetCode/cpp/lc_0844.cpp) |                                      | [Py](LeetCode/python/lc_0844.py) |
 | [977. 有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/) | [C++](LeetCode/cpp/lc_0977.cpp) |                                      | [Py](LeetCode/python/lc_0977.py) |
 | [209. 长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/) | [C++](LeetCode/cpp/lc_0209.cpp) |                                      | [Py](LeetCode/python/lc_0209.py) |
 | [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) | [C++](LeetCode/cpp/lc_0076.cpp) |                                      |                                  |
