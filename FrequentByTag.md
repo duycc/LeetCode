@@ -169,6 +169,7 @@
 |  ###  | [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/) | [C++](LeetCode/cpp/lc_0039.cpp) |            |        |
 |  ###  | [40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/) | [C++](LeetCode/cpp/lc_0040.cpp) |            |        |
 |  ###  | [216. 组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/) | [C++](LeetCode/cpp/lc_0216.cpp) |            |        |
+|   #   | [377. 组合总和 Ⅳ](https://leetcode-cn.com/problems/combination-sum-iv/) | [C++](LeetCode/cpp/lc_0377.cpp) |            |        |
 |  ###  | [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) | [C++](LeetCode/cpp/lc_0017.cpp) |            |        |
 |  ##   | [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [C++](LeetCode/cpp/lc_0022.cpp) |            |        |
 |  ###  | [131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/) | [C++](LeetCode/cpp/lc_0131.cpp) |            |        |
@@ -230,6 +231,10 @@
 |  ###  | [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle/) | [C++](LeetCode/cpp/lc_0120.cpp) |            |        |
 |  ###  | [96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/) | [C++](LeetCode/cpp/lc_0096.cpp) |            |        |
 | ####  | [95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/) | [C++](LeetCode/cpp/lc_0095.cpp) |            |        |
+|   #   | [279. 完全平方数](https://leetcode-cn.com/problems/perfect-squares/) | [C++](LeetCode/cpp/lc_0279.cpp) |            |        |
+|   #   | [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/) | [C++](LeetCode/cpp/lc_0198.cpp) |            |        |
+|   #   | [213. 打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/) | [C++](LeetCode/cpp/lc_0213.cpp) |            |        |
+|   #   | [337. 打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/) | [C++](LeetCode/cpp/lc_0337.cpp) |            |        |
 | ##### | [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [C++](LeetCode/cpp/lc_0053.cpp) |            |        |
 |  ##   | [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/) | [C++](LeetCode/cpp/lc_0072.cpp) |            |        |
 |  ##   | [238. 除自身以外数组的乘积](https://leetcode-cn.com/problems/product-of-array-except-self/) | [C++](LeetCode/cpp/lc_0238.cpp) |            |        |

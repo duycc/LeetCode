@@ -4,16 +4,19 @@
  * @author   YongDu
  * @date     2021-09-28
  */
+
 class Solution {
 public:
   int change(int amount, vector<int> &coins) {
-    vector<int> result(amount + 1, 0);
-    result[0] = 1;
+    vector<int> dp(amount + 1, 0);
+    dp[0] = 1;
+
+    // 先遍历物品，再遍历背包，防止出现重复的硬币组合
     for (int i = 0; i < coins.size(); ++i) {
       for (int j = coins[i]; j <= amount; ++j) {
-        result[j] += result[j - coins[i]];
+        dp[j] += dp[j - coins[i]];
       }
     }
-    return result[amount];
+    return dp[amount];
   }
 };
