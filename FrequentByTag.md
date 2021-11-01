@@ -12,13 +12,13 @@
 | [844. 比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/) | [C++](LeetCode/cpp/lc_0844.cpp) |                                      | [Py](LeetCode/python/lc_0844.py) |
 | [977. 有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/) | [C++](LeetCode/cpp/lc_0977.cpp) |                                      | [Py](LeetCode/python/lc_0977.py) |
 | [209. 长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/) | [C++](LeetCode/cpp/lc_0209.cpp) |                                      | [Py](LeetCode/python/lc_0209.py) |
-| [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) | [C++](LeetCode/cpp/lc_0076.cpp) |                                      |                                  |
-| [904. 水果成篮](https://leetcode-cn.com/problems/fruit-into-baskets/) | [C++](LeetCode/cpp/lc_0904.cpp) |                                      |                                  |
-| [54. 螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/) | [C++](LeetCode/cpp/lc_0054.cpp) |                                      |                                  |
-| [59. 螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/) | [C++](LeetCode/cpp/lc_0059.cpp) |                                      |                                  |
+| [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) | [C++](LeetCode/cpp/lc_0076.cpp) |                                      | [Py](LeetCode/python/lc_0076.py) |
+| [904. 水果成篮](https://leetcode-cn.com/problems/fruit-into-baskets/) | [C++](LeetCode/cpp/lc_0904.cpp) |                                      | [Py](LeetCode/python/lc_0904.py) |
+| [54. 螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/) | [C++](LeetCode/cpp/lc_0054.cpp) |                                      | [Py](LeetCode/python/lc_0054.py) |
+| [59. 螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/) | [C++](LeetCode/cpp/lc_0059.cpp) |                                      | [Py](LeetCode/python/lc_0059.py) |
 | [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [C++](LeetCode/cpp/lc_0088.cpp) | [JS](LeetCode/javascript/lc_0088.js) | [Py](LeetCode/python/lc_0088.py) |
-| [414. 第三大的数](https://leetcode-cn.com/problems/third-maximum-number/) | [C++](LeetCode/cpp/lc_0414.cpp) | [JS](LeetCode/javascript/lc_0414.js) |                                  |
-| [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/) | [C++](LeetCode/cpp/lc_0152.cpp) |                                      |                                  |
+| [414. 第三大的数](https://leetcode-cn.com/problems/third-maximum-number/) | [C++](LeetCode/cpp/lc_0414.cpp) | [JS](LeetCode/javascript/lc_0414.js) | [Py](LeetCode/python/lc_0414.py) |
+| [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/) | [C++](LeetCode/cpp/lc_0152.cpp) |                                      | [Py](LeetCode/python/lc_0152.py) |
 
 ## 链表
 
@@ -54,7 +54,7 @@
 | [128. 最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/) | [C++](LeetCode/cpp/lc_0128.cpp) | [JS](LeetCode/javascript/lc_0128.js) | [Python](LeetCode/python/lc_0128.py) |
 | [560. 和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/) | [C++](LeetCode/cpp/lc_0560.cpp) |                                      |                                      |
 | [523. 连续的子数组和](https://leetcode-cn.com/problems/continuous-subarray-sum/) | [C++](LeetCode/cpp/lc_0523.cpp) |                                      |                                      |
-| [41. 缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/) | [C++](LeetCode/cpp/lc_0041.cpp) |                                      |                                      |
+| [41. 缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/) | [C++](LeetCode/cpp/lc_0041.cpp) |                                      |   [Py](LeetCode/python/lc_0041.py)   |
 | [217. 存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/) | [C++](LeetCode/cpp/lc_0217.cpp) |                                      |                                      |
 | [187. 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/) | [C++](LeetCode/cpp/lc_0187.cpp) |                                      |                                      |
 | [36. 有效的数独](https://leetcode-cn.com/problems/valid-sudoku/) | [C++](LeetCode/cpp/lc_0036.cpp) |                                      |                                      |
