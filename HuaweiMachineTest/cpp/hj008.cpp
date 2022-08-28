@@ -4,23 +4,22 @@
  * @author   DuYong
  * @date     2021-05-01
  */
-#include <bits/stdc++.h>
+#include <iostream>
+#include <map>
 using namespace std;
 
 int main() {
-    uint32_t count;
-    cin >> count;
-    map<int, int> hashMap;
-    int key, value;
-    
-    for(int i{}; i < count; ++i) {
-        cin >> key >> value;
-        hashMap[key] += value;
+    int size{0};
+    while (cin >> size) {
+        int                key, value;
+        std::map<int, int> hashMap;
+        while (cin >> key >> value) {
+            hashMap[key] += value;
+        }
+        for (auto kv : hashMap) {
+            cout << kv.first << " " << kv.second << endl;
+        }
     }
-    
-    for(auto& elem: hashMap) {
-        cout << elem.first << " " << elem.second << endl;
-    }
-    
+
     return 0;
 }

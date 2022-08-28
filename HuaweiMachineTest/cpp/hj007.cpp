@@ -12,6 +12,6 @@ int main() {
     cin >> num;
     assert(num > 0);
     cout << static_cast<int>(num + 0.5) << endl;
-    
+
     return 0;
 }

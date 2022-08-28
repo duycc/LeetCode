@@ -4,4 +4,3 @@ AlwaysBreakTemplateDeclarations: true
 IndentWidth: 4
 PointerAlignment: Left
 AlignConsecutiveDeclarations: true
-AlignConsecutiveAssignments: true

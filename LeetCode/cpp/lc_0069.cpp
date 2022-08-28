@@ -14,7 +14,7 @@ class Solution {
         int sqrt;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            sqrt    = x / mid;
+            sqrt = x / mid;
             if (sqrt == mid) {
                 return sqrt;
             } else if (sqrt < mid) {

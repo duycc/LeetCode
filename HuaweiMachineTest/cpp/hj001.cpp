@@ -4,15 +4,14 @@
  * @author   DuYong
  * @date     2021-04-27
  */
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-    string words;
+    std::string words;
     getline(cin, words);
-    
     auto pos = words.rfind(' ');
     cout << words.size() - 1 - pos;
-    
-    return 0;
+    return EXIT_SUCCESS;
 }

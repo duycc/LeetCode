@@ -4,24 +4,20 @@
  * @author   DuYong
  * @date     2021-05-01
  */
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-    int num;
-    cin >> num;
-    
-    num = abs(num); // 去除负号
-    vector<bool> exist(10, false);
-    
-    while(num > 0) {
-        int mod = num % 10;
-        if(!exist[mod]) {
-            exist[mod] = true;
-            cout << mod;
+    std::string inNum;
+    while (cin >> inNum) {
+        std::string outNum;
+        for (auto&& iter = inNum.rbegin(); iter != inNum.rend(); ++iter) {
+            if (outNum.find(*iter) == string::npos) {
+                outNum.push_back(*iter);
+            }
         }
-        num /= 10;
+        cout << outNum << endl;
     }
-    
     return 0;
 }

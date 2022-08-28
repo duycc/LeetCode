@@ -4,20 +4,22 @@
  * @author   DuYong
  * @date     2021-05-01
  */
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <unordered_set>
+
 using namespace std;
 
 int main() {
-    string str;
-    getline(cin, str);
-    
-    unordered_set<char> result;
-    for(auto ch: str) {
-        if(0 <= ch <= 127) {
-            result.emplace(ch);
+    std::string chars;
+    while (cin >> chars) {
+        std::unordered_set<char> chs;
+        for (auto ch : chars) {
+            if (ch >= 0 && ch <= 127) {
+                chs.emplace(ch);
+            }
         }
+        cout << chs.size() << endl;
     }
-    cout << result.size() << endl;
-    
     return 0;
 }
