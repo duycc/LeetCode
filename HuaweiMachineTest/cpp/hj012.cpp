@@ -10,8 +10,8 @@ using namespace std;
 int main() {
     string str;
     getline(cin, str);
-    
+
     copy(str.rbegin(), str.rend(), ostream_iterator<char>(cout));
-    
+
     return 0;
 }

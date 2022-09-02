@@ -4,20 +4,15 @@
  * @author   DuYong
  * @date     2021-05-01
  */
-#include <bits/stdc++.h>
+#include <bitset>
+#include <iostream>
 using namespace std;
 
 int main() {
-    uint32_t num;
+    int32_t num;
     cin >> num;
-    int count = 0;
-    
-    while(num) {
-        count++;
-        num = (num - 1) & num;
-    }
-    
-    cout << count << endl;
-    
+    std::bitset<32> b(num);
+    cout << b.count() << endl;
+
     return 0;
 }

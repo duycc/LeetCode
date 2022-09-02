@@ -8,17 +8,17 @@
 using namespace std;
 
 int main() {
-    uint32_t num;
-    string word;
+    uint32_t         num;
+    string           word;
     multiset<string> words;
     cin >> num;
-    
-    for(int i{}; i < num; ++i) {
+
+    for (int i{}; i < num; ++i) {
         cin >> word;
-        words.emplace(word);    
+        words.emplace(word);
     }
-    
+
     copy(words.begin(), words.end(), ostream_iterator<string>(cout, "\n"));
-    
+
     return 0;
 }
