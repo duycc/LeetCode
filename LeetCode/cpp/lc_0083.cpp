@@ -6,18 +6,18 @@
  */
 
 class Solution {
-public:
-  ListNode *deleteDuplicates(ListNode *head) {
-    ListNode *pTmp = head;
+  public:
+    ListNode* deleteDuplicates(ListNode* head) {
+        ListNode* pTmp = head;
 
-    while (pTmp && pTmp->next) {
-      if (pTmp->next->val == pTmp->val) {
-        pTmp->next = pTmp->next->next;
-      } else {
-        pTmp = pTmp->next;
-      }
+        while (pTmp && pTmp->next) {
+            if (pTmp->next->val == pTmp->val) {
+                pTmp->next = pTmp->next->next;
+            } else {
+                pTmp = pTmp->next;
+            }
+        }
+
+        return head;
     }
-
-    return head;
-  }
 };

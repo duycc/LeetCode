@@ -6,56 +6,56 @@
  */
 
 class Solution {
-public:
-  void reorderList(ListNode *head) {
-    if (!head || !head->next || !head->next->next) {
-      return;
+  public:
+    void reorderList(ListNode* head) {
+        if (!head || !head->next || !head->next->next) {
+            return;
+        }
+
+        ListNode* midNode = middleNode(head);
+        ListNode* right = reverseList(midNode->next);
+        midNode->next = nullptr;
+        mergeList(head, right);
     }
 
-    ListNode *midNode = middleNode(head);
-    ListNode *right = reverseList(midNode->next);
-    midNode->next = nullptr;
-    mergeList(head, right);
-  }
+    ListNode* middleNode(ListNode* head) {
+        if (!head) {
+            return nullptr;
+        }
+        ListNode* slow = head;
+        ListNode* fast = head;
+        while (fast && fast->next) {
+            fast = fast->next->next;
+            slow = slow->next;
+        }
 
-  ListNode *middleNode(ListNode *head) {
-    if (!head) {
-      return nullptr;
-    }
-    ListNode *slow = head;
-    ListNode *fast = head;
-    while (fast && fast->next) {
-      fast = fast->next->next;
-      slow = slow->next;
+        return slow;
     }
 
-    return slow;
-  }
+    ListNode* reverseList(ListNode* head) {
+        ListNode* prev = nullptr;
+        while (head) {
+            ListNode* curr = head;
+            head = head->next;
+            curr->next = prev;
+            prev = curr;
+        }
 
-  ListNode *reverseList(ListNode *head) {
-    ListNode *prev = nullptr;
-    while (head) {
-      ListNode *curr = head;
-      head = head->next;
-      curr->next = prev;
-      prev = curr;
+        return prev;
     }
 
-    return prev;
-  }
+    void mergeList(ListNode* left, ListNode* right) {
+        ListNode* dummy = new ListNode();
 
-  void mergeList(ListNode *left, ListNode *right) {
-    ListNode *dummy = new ListNode();
+        while (left && right) {
+            dummy->next = left;
+            left = left->next;
+            dummy = dummy->next;
+            dummy->next = right;
+            right = right->next;
+            dummy = dummy->next;
+        }
 
-    while (left && right) {
-      dummy->next = left;
-      left = left->next;
-      dummy = dummy->next;
-      dummy->next = right;
-      right = right->next;
-      dummy = dummy->next;
+        dummy->next = left ? left : right;
     }
-
-    dummy->next = left ? left : right;
-  }
 };
