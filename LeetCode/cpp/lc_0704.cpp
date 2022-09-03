@@ -7,10 +7,7 @@
 class Solution {
   public:
     int search(vector<int>& nums, int target) {
-        if (nums.empty()) {
-            return -1;
-        }
-        int left  = 0;
+        int left = 0;
         int right = nums.size() - 1;
         while (left <= right) {
             int mid = left + ((right - left) >> 1);
