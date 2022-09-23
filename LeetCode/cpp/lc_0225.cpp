@@ -9,62 +9,62 @@
 // 两个队列实现
 //===----------------------------------------------------------------------===//
 class MyStack {
-public:
-  MyStack() {}
+  public:
+    MyStack() {}
 
-  void push(int x) { dataQue.push(x); }
+    void push(int x) { dataQue.push(x); }
 
-  int pop() {
-    int size = dataQue.size();
-    size--;
-    while (size--) {
-      helpQue.push(dataQue.front());
-      dataQue.pop();
+    int pop() {
+        int size = dataQue.size();
+        size--;
+        while (size--) {
+            helpQue.push(dataQue.front());
+            dataQue.pop();
+        }
+        int res = dataQue.front();
+        dataQue.pop();
+        dataQue = helpQue;
+        while (!helpQue.empty()) {
+            helpQue.pop();
+        }
+        return res;
     }
-    int res = dataQue.front();
-    dataQue.pop();
-    dataQue = helpQue;
-    while (!helpQue.empty()) {
-      helpQue.pop();
-    }
-    return res;
-  }
 
-  int top() { return dataQue.back(); }
+    int top() { return dataQue.back(); }
 
-  bool empty() { return dataQue.empty(); }
+    bool empty() { return dataQue.empty(); }
 
-private:
-  std::queue<int> dataQue;
-  std::queue<int> helpQue;
+  private:
+    std::queue<int> dataQue;
+    std::queue<int> helpQue;
 };
 
 //===------------------------- [One Queue] --------------------------------===//
 // 一个队列实现
 //===----------------------------------------------------------------------===//
 class MyStack {
-public:
-  MyStack() {}
+  public:
+    MyStack() {}
 
-  void push(int x) { dataQue.push(x); }
+    void push(int x) { queStk_.push(x); }
 
-  int pop() {
-    int size = dataQue.size();
-    while (--size) {
-      dataQue.push(dataQue.front());
-      dataQue.pop();
+    int pop() {
+        int size = queStk_.size();
+        while (--size) {
+            queStk_.push(queStk_.front());
+            queStk_.pop();
+        }
+        int result = queStk_.front();
+        queStk_.pop();
+        return result;
     }
-    int res = dataQue.front();
-    dataQue.pop();
-    return res;
-  }
 
-  int top() { return dataQue.back(); }
+    int top() { return queStk_.back(); }
 
-  bool empty() { return dataQue.empty(); }
+    bool empty() { return queStk_.empty(); }
 
-private:
-  std::queue<int> dataQue;
+  private:
+    std::queue<int> queStk_;
 };
 
 /**

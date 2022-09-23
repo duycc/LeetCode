@@ -4,38 +4,39 @@
  * @author   YongDu
  * @date     2021-09-10
  */
+
 class MyQueue {
-public:
-  MyQueue() {}
+  public:
+    MyQueue() {}
 
-  void push(int x) { inStk.push(x); }
+    void push(int x) { inStk_.push(x); }
 
-  int pop() {
-    if (this->empty()) {
-      return -1;
+    int pop() {
+        if (empty()) {
+            return -1;
+        }
+        if (outStk_.empty()) {
+            while (!inStk_.empty()) {
+                outStk_.push(inStk_.top());
+                inStk_.pop();
+            }
+        }
+        int result = outStk_.top();
+        outStk_.pop();
+        return result;
     }
-    if (outStk.empty()) {
-      while (!inStk.empty()) {
-        outStk.push(inStk.top());
-        inStk.pop();
-      }
+
+    int peek() {
+        int result = this->pop();
+        outStk_.push(result);
+        return result;
     }
-    int res = outStk.top();
-    outStk.pop();
-    return res;
-  }
 
-  int peek() {
-    int res = this->pop();
-    outStk.push(res);
-    return res;
-  }
+    bool empty() { return inStk_.empty() && outStk_.empty(); }
 
-  bool empty() { return inStk.empty() && outStk.empty(); }
-
-private:
-  std::stack<int> inStk;
-  std::stack<int> outStk;
+  private:
+    std::stack<int> inStk_;
+    std::stack<int> outStk_;
 };
 
 /**

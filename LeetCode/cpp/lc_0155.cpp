@@ -4,36 +4,34 @@
  * @author   DuYong
  * @date     2021-03-06
  */
-
 class MinStack {
-public:
-  /** initialize your data structure here. */
-  MinStack() {}
+  public:
+    MinStack() {}
 
-  void push(int val) {
-    if (min_stack.empty() || val <= min_stack.top()) {
-      min_stack.push(val);
+    void push(int val) {
+        if (minStk_.empty() || val <= minStk_.top()) {
+            minStk_.push(val);
+        }
+        valStk_.push(val);
     }
-    val_stack.push(val);
-  }
 
-  void pop() {
-    if (val_stack.empty()) {
-      return;
+    void pop() {
+        if (valStk_.empty()) {
+            return;
+        }
+        if (minStk_.top() == valStk_.top()) {
+            minStk_.pop();
+        }
+        valStk_.pop();
     }
-    if (val_stack.top() == min_stack.top()) {
-      min_stack.pop();
-    }
-    val_stack.pop();
-  }
 
-  int top() { return val_stack.top(); }
+    int top() { return valStk_.top(); }
 
-  int getMin() { return min_stack.top(); }
+    int getMin() { return minStk_.top(); }
 
-private:
-  std::stack<int> val_stack;
-  std::stack<int> min_stack;
+  private:
+    std::stack<int> valStk_;
+    std::stack<int> minStk_;
 };
 
 /**

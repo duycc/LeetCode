@@ -5,29 +5,28 @@
  * @date     2021-09-10
  */
 class Solution {
-public:
-  int evalRPN(vector<string> &tokens) {
-    std::stack<int> operands;
-    for (auto &token : tokens) {
-      if (token == "+" || token == "-" || token == "*" || token == "/") {
-        int rhs = operands.top();
-        operands.pop();
-        int lhs = operands.top();
-        operands.pop();
-
-        if (token == "+") {
-          operands.push(lhs + rhs);
-        } else if (token == "-") {
-          operands.push(lhs - rhs);
-        } else if (token == "*") {
-          operands.push(lhs * rhs);
-        } else {
-          operands.push(lhs / rhs);
+  public:
+    int evalRPN(vector<string>& tokens) {
+        std::stack<int64_t> stk;
+        for (string& tk : tokens) {
+            if (tk == "+" || tk == "-" || tk == "*" || tk == "/") {
+                int64_t rhs = stk.top();
+                stk.pop();
+                int64_t lhs = stk.top();
+                stk.pop();
+                if (tk == "+") {
+                    stk.push(lhs + rhs);
+                } else if (tk == "-") {
+                    stk.push(lhs - rhs);
+                } else if (tk == "*") {
+                    stk.push(lhs * rhs);
+                } else {
+                    stk.push(lhs / rhs);
+                }
+            } else {
+                stk.push(std::stoi(tk));
+            }
         }
-      } else {
-        operands.push(std::stoi(token));
-      }
+        return stk.top();
     }
-    return operands.top();
-  }
 };

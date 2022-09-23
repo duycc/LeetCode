@@ -4,32 +4,31 @@
  * @author   YongDu
  * @date     2021-09-11
  */
+
 class Solution {
-public:
-  vector<int> topKFrequent(vector<int> &nums, int k) {
-    std::unordered_map<int, int> elemFreq;
-    for (auto num : nums) {
-      elemFreq[num]++;
-    }
+  public:
+    vector<int> topKFrequent(vector<int>& nums, int k) {
+        std::unordered_map<int, int> cntMap;
+        for (int n : nums) {
+            cntMap[n]++;
+        }
 
-    struct Comp {
-    public:
-      bool operator()(std::pair<int, int> &lhs, std::pair<int, int> &rhs) { return lhs.second > rhs.second; }
-    };
+        auto comp = [](const std::pair<int, int>& lhs, const std::pair<int, int>& rhs) {
+            return lhs.second > rhs.second;
+        };
+        std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, decltype(comp)> priQue(comp);
+        for (auto& elem : cntMap) {
+            priQue.emplace(elem);
+            if (priQue.size() > k) {
+                priQue.pop();
+            }
+        }
 
-    std::priority_queue<std::pair<int, int>, vector<std::pair<int, int>>, Comp> priQue;
-    for (auto &elem : elemFreq) {
-      priQue.emplace(elem);
-      if (priQue.size() > k) {
-        priQue.pop();
-      }
+        std::vector<int> result;
+        while (!priQue.empty()) {
+            result.emplace_back(priQue.top().first);
+            priQue.pop();
+        }
+        return result;
     }
-
-    vector<int> result;
-    while (!priQue.empty()) {
-      result.emplace_back(priQue.top().first);
-      priQue.pop();
-    }
-    return result;
-  }
 };

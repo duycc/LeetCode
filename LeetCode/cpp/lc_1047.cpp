@@ -5,16 +5,16 @@
  * @date     2021-09-11
  */
 class Solution {
-public:
-  string removeDuplicates(string s) {
-    string res;
-    for (auto &ch : s) {
-      if (res.empty() || res.back() != ch) {
-        res.push_back(ch);
-      } else {
-        res.pop_back();
-      }
+  public:
+    string removeDuplicates(string s) {
+        std::string result;
+        for (char ch : s) {
+            if (ch == result.back()) {
+                result.pop_back();
+            } else {
+                result.push_back(ch);
+            }
+        }
+        return result;
     }
-    return res;
-  }
 };

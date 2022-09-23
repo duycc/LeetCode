@@ -6,34 +6,28 @@
  */
 
 class Solution {
-public:
-  vector<string> topKFrequent(vector<string> &words, int k) {
-    unordered_map<string, int> hashMap; // 统计词频
-    for (auto &word : words) {
-      hashMap[word]++;
+  public:
+    vector<string> topKFrequent(vector<string>& words, int k) {
+        std::unordered_map<std::string, int> cntMap;
+        for (auto& w : words) {
+            cntMap[w]++;
+        }
+        auto comp = [](const std::pair<std::string, int>& lhs, const std::pair<std::string, int>& rhs) {
+            return lhs.second > rhs.second || (lhs.second == rhs.second && lhs.first < rhs.first);
+        };
+        std::priority_queue<std::pair<std::string, int>, std::vector<std::pair<std::string, int>>, decltype(comp)>
+            priQue(comp);
+        for (auto& elem : cntMap) {
+            priQue.emplace(elem);
+            if (priQue.size() > k) {
+                priQue.pop();
+            }
+        }
+        std::vector<std::string> result;
+        while (!priQue.empty()) {
+            result.insert(result.begin(), priQue.top().first);
+            priQue.pop();
+        }
+        return result;
     }
-
-    struct Comp {
-      bool operator()(const pair<string, int> &lhs, const pair<string, int> &rhs) {
-        return lhs.second > rhs.second || (lhs.second == rhs.second && lhs.first < rhs.first);
-      }
-    };
-
-    priority_queue<pair<string, int>, vector<pair<string, int>>, Comp> priQue;
-
-    for (auto &elem : hashMap) {
-      priQue.emplace(elem);
-      if (priQue.size() > k) {
-        priQue.pop();
-      }
-    }
-
-    vector<string> result;
-    while (!priQue.empty()) {
-      result.insert(result.begin(), priQue.top().first); // 采用 insert() 模拟栈
-      priQue.pop();
-    }
-
-    return result;
-  }
 };
