@@ -15,27 +15,27 @@
  * };
  */
 class Solution {
-public:
-  ListNode *removeNthFromEnd(ListNode *head, int n) {
-    ListNode *dummyNode = new ListNode();
-    dummyNode->next = head;
+  public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        ListNode* dummyNode = new ListNode();
+        dummyNode->next = head;
 
-    ListNode *leftNode = dummyNode;
-    ListNode *rightNode = dummyNode;
-    while (n--) {
-      rightNode = rightNode->next;
+        ListNode* leftNode = dummyNode;
+        ListNode* rightNode = dummyNode;
+        while (n--) {
+            rightNode = rightNode->next;
+        }
+
+        while (rightNode->next) {
+            rightNode = rightNode->next;
+            leftNode = leftNode->next;
+        }
+
+        ListNode* tmpNode = leftNode->next;
+        leftNode->next = leftNode->next->next;
+        head = dummyNode->next;
+        delete tmpNode;
+        delete dummyNode;
+        return head;
     }
-
-    while (rightNode->next) {
-      rightNode = rightNode->next;
-      leftNode = leftNode->next;
-    }
-
-    ListNode *tmpNode = leftNode->next;
-    leftNode->next = leftNode->next->next;
-    head = dummyNode->next;
-    delete tmpNode;
-    delete dummyNode;
-    return head;
-  }
 };
