@@ -4,20 +4,17 @@
  * @author   YongDu
  * @date     2021-09-08
  */
+
 class Solution {
-public:
-  vector<int> intersection(vector<int> &nums1, vector<int> &nums2) {
-    vector<int> result;
-    if (nums1.empty() || nums2.empty()) {
-      return result;
+  public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        std::unordered_set<int> set1st(nums1.begin(), nums1.end());
+        std::unordered_set<int> resSet;
+        for (int n : nums2) {
+            if (set1st.find(n) != set1st.end()) {
+                resSet.emplace(n);
+            }
+        }
+        return std::vector(resSet.begin(), resSet.end());
     }
-    std::unordered_set<int> s1{nums1.begin(), nums1.end()};
-    for (auto num : nums2) {
-      if (s1.find(num) != s1.end()) {
-        result.emplace_back(num);
-        s1.erase(num);
-      }
-    }
-    return result;
-  }
 };

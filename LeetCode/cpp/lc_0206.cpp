@@ -7,35 +7,33 @@
 
 /*----- 递归版 -----*/
 class Solution {
-public:
-  ListNode *reverseList(ListNode *head) { return reverseList(nullptr, head); }
+  public:
+    ListNode* reverseList(ListNode* head) { return reverseList(nullptr, head); }
 
-private:
-  ListNode *reverseList(ListNode *preNode, ListNode *curNode) {
-    if (nullptr == curNode) {
-      return preNode;
+  private:
+    ListNode* reverseList(ListNode* preNode, ListNode* curNode) {
+        if (nullptr == curNode) {
+            return preNode;
+        }
+        ListNode* nextNode = curNode->next;
+        curNode->next = preNode;
+        return reverseList(curNode, nextNode);
     }
-    ListNode *nextNode = curNode->next;
-    curNode->next = preNode;
-    return reverseList(curNode, nextNode);
-  }
 };
 
 /*----- 迭代版 -----*/
 class Solution {
-public:
-  ListNode *reverseList(ListNode *head) {
-    // 迭代
-    ListNode *preNode = nullptr;
-    ListNode *curNode = nullptr;
-    ListNode *tmpNode = head; // 一般不直接操作 head 头结点
-
-    while (tmpNode) {
-      curNode = tmpNode;
-      tmpNode = tmpNode->next;
-      curNode->next = preNode;
-      preNode = curNode;
+  public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* prev = nullptr;
+        ListNode* curr = nullptr;
+        while (head) {
+            curr = head;
+            head = head->next;
+            curr->next = prev;
+            prev = curr;
+        }
+        head = curr;
+        return head;
     }
-    return curNode;
-  }
 };

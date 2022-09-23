@@ -6,19 +6,19 @@
  */
 // 前缀和 + 哈希查找
 class Solution {
-public:
-  int subarraySum(vector<int> &nums, int k) {
-    std::unordered_map<int, int> hashMap;
-    hashMap[0] = 1;
-    int count = 0;
-    int pre = 0;
-    for (auto &num : nums) {
-      pre += num;
-      if (hashMap.find(pre - k) != hashMap.end()) {
-        count += hashMap[pre - k];
-      }
-      hashMap[pre]++;
+  public:
+    int subarraySum(vector<int>& nums, int k) {
+        std::unordered_map<int, int> preSumMap;
+        preSumMap[0] = 1;
+        int result = 0;
+        int curSum = 0;
+        for (int n : nums) {
+            curSum += n;
+            if (preSumMap.find(curSum - k) != preSumMap.end()) {
+                result += preSumMap[curSum - k];
+            }
+            preSumMap[curSum]++;
+        }
+        return result;
     }
-    return count;
-  }
 };

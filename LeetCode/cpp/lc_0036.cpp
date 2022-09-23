@@ -5,29 +5,26 @@
  * @date     2021-10-14
  */
 class Solution {
-public:
-  bool isValidSudoku(vector<vector<char>> &board) {
-    int rows[9][9];
-    int cols[9][9];
-    int subboxes[3][3][9];
+  public:
+    bool isValidSudoku(vector<vector<char>>& board) {
+        std::vector<std::vector<int>> rows(9, std::vector<int>(9, 0));
+        std::vector<std::vector<int>> cols(9, std::vector<int>(9, 0));
 
-    memset(rows, 0, sizeof(rows));
-    memset(cols, 0, sizeof(cols));
-    memset(subboxes, 0, sizeof(subboxes));
-    for (int i = 0; i < 9; ++i) {
-      for (int j = 0; j < 9; ++j) {
-        if (board[i][j] == '.') {
-          continue;
+        std::vector<std::vector<std::vector<int>>> subboxs(3, std::vector<std::vector<int>>(3, std::vector<int>(9, 0)));
+        for (int i = 0; i < 9; ++i) {
+            for (int j = 0; j < 9; ++j) {
+                if (board[i][j] == '.') {
+                    continue;
+                }
+                int val = board[i][j] - '0' - 1;
+                rows[i][val]++;
+                cols[j][val]++;
+                subboxs[i / 3][j / 3][val]++;
+                if (rows[i][val] > 1 || cols[j][val] > 1 || subboxs[i / 3][j / 3][val] > 1) {
+                    return false;
+                }
+            }
         }
-        int idx = board[i][j] - '0' - 1;
-        rows[i][idx]++;
-        cols[j][idx]++;
-        subboxes[i / 3][j / 3][idx]++;
-        if (rows[i][idx] > 1 || cols[j][idx] > 1 || subboxes[i / 3][j / 3][idx] > 1) {
-          return false;
-        }
-      }
+        return true;
     }
-    return true;
-  }
 };

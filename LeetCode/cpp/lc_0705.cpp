@@ -4,47 +4,38 @@
  * @author   YongDu
  * @date     2021-09-11
  */
+
 class MyHashSet {
-public:
-  /** Initialize your data structure here. */
-  MyHashSet() : data(base) {}
+  public:
+    MyHashSet() : data_(kBase) {}
 
-  void add(int key) {
-    int h = hash(key);
-    for (auto iter = data[h].begin(); iter != data[h].end(); ++iter) {
-      if ((*iter) == key) {
-        return;
-      }
+    void add(int key) {
+        if (contains(key)) {
+            return;
+        }
+        data_[hash(key)].emplace_back(key);
     }
-    data[h].emplace_back(key);
-  }
 
-  void remove(int key) {
-    int h = hash(key);
-    for (auto iter = data[h].begin(); iter != data[h].end(); ++iter) {
-      if ((*iter) == key) {
-        data[h].erase(iter);
-        return;
-      }
+    void remove(int key) {
+        if (contains(key)) {
+            data_[hash(key)].remove(key);
+        }
     }
-    return;
-  }
 
-  /** Returns true if this set contains the specified element */
-  bool contains(int key) {
-    int h = hash(key);
-    for (auto iter = data[h].begin(); iter != data[h].end(); ++iter) {
-      if ((*iter) == key) {
-        return true;
-      }
+    bool contains(int key) {
+        int h = hash(key);
+        for (int num : data_[h]) {
+            if (num == key) {
+                return true;
+            }
+        }
+        return false;
     }
-    return false;
-  }
 
-private:
-  vector<list<int>> data;
-  static const int base = 769;
-  static int hash(int key) { return key % base; }
+  private:
+    std::vector<std::list<int>> data_;
+    static const int kBase = 769;
+    static int hash(int key) { return key % kBase; }
 };
 
 /**

@@ -4,22 +4,22 @@
  * @author   YongDu
  * @date     2021-08-18
  */
-
 class Solution {
-public:
-  int longestConsecutive(vector<int> &nums) {
-    std::unordered_set<int> numSet(nums.begin(), nums.end());
-    int maxLen = 0;
-    for (auto num : numSet) {
-      if (numSet.find(num - 1) != numSet.end()) {
-        continue; // 跳过已经检查过的元素
-      }
-      int start = num;
-      while (numSet.find(start) != numSet.end()) {
-        start++;
-      }
-      maxLen = std::max(start - num, maxLen);
+  public:
+    int longestConsecutive(vector<int>& nums) {
+        int maxLen = 0;
+
+        std::unordered_set<int> numSet(nums.begin(), nums.end());
+        for (int n : numSet) {
+            if (numSet.find(n - 1) != numSet.end()) {
+                continue;
+            }
+            int start = n;
+            while (numSet.find(start) != numSet.end()) {
+                start++;
+            }
+            maxLen = std::max(maxLen, start - n);
+        }
+        return maxLen;
     }
-    return maxLen;
-  }
 };

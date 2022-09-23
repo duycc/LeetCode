@@ -5,22 +5,23 @@
  * @date     2021-09-08
  */
 class Solution {
-public:
-  int fourSumCount(vector<int> &nums1, vector<int> &nums2, vector<int> &nums3, vector<int> &nums4) {
-    std::unordered_map<int, int> sumABMap; // <A[i] + B[i], count>
-    for (int a : nums1) {
-      for (int b : nums2) {
-        sumABMap[a + b]++;
-      }
-    }
-    int count = 0;
-    for (int c : nums3) {
-      for (int d : nums4) {
-        if (sumABMap.find(0 - (c + d)) != sumABMap.end()) {
-          count += sumABMap[0 - (c + d)];
+  public:
+    int fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4) {
+        int                          size = nums1.size();
+        std::unordered_map<int, int> sumMap;
+        for (int n1 : nums1) {
+            for (int n2 : nums2) {
+                sumMap[n1 + n2]++;
+            }
         }
-      }
+        int count{0};
+        for (int n3 : nums3) {
+            for (int n4 : nums4) {
+                if (sumMap.find(0 - (n3 + n4)) != sumMap.end()) {
+                    count += sumMap[0 - (n3 + n4)];
+                }
+            }
+        }
+        return count;
     }
-    return count;
-  }
 };

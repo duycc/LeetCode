@@ -4,19 +4,11 @@
  * @author   YongDu
  * @date     2021-10-04
  */
+
 class Solution {
-public:
-  bool containsDuplicate(vector<int> &nums) {
-    if (nums.empty()) {
-      return false;
+  public:
+    bool containsDuplicate(vector<int>& nums) {
+        std::unordered_set<int> numSet(nums.begin(), nums.end());
+        return nums.size() != numSet.size();
     }
-    std::unordered_set<int> exist;
-    for (auto &num : nums) {
-      if (exist.find(num) != exist.end()) {
-        return true;
-      }
-      exist.emplace(num);
-    }
-    return false;
-  }
 };
