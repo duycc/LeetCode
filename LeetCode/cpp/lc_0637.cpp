@@ -6,31 +6,31 @@
  */
 
 class Solution {
-public:
-  vector<double> averageOfLevels(TreeNode *root) {
-    vector<double> result;
-    if (nullptr == root) {
-      return result;
-    }
-    std::queue<TreeNode *> que;
-    TreeNode *node = root;
-    que.emplace(node);
-    while (!que.empty()) {
-      int size = que.size();
-      double sum = 0;
-      for (int i = 0; i < size; ++i) {
-        node = que.front();
-        que.pop();
-        sum += node->val;
-        if (node->left) {
-          que.emplace(node->left);
+  public:
+    vector<double> averageOfLevels(TreeNode* root) {
+        vector<double> result;
+        if (nullptr == root) {
+            return result;
         }
-        if (node->right) {
-          que.emplace(node->right);
+        std::queue<TreeNode*> que;
+        TreeNode* node = root;
+        que.emplace(node);
+        while (!que.empty()) {
+            int size = que.size();
+            double sum = 0;
+            for (int i = 0; i < size; ++i) {
+                node = que.front();
+                que.pop();
+                sum += node->val;
+                if (node->left) {
+                    que.emplace(node->left);
+                }
+                if (node->right) {
+                    que.emplace(node->right);
+                }
+            }
+            result.emplace_back(sum / size);
         }
-      }
-      result.emplace_back(sum / size);
+        return result;
     }
-    return result;
-  }
 };
