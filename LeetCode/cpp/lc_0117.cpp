@@ -5,6 +5,7 @@
  * @date     2021-09-12
  */
 /*
+/*
 // Definition for a Node.
 class Node {
 public:
@@ -21,38 +22,32 @@ public:
         : val(_val), left(_left), right(_right), next(_next) {}
 };
 */
+
 class Solution {
-public:
-  Node *connect(Node *root) {
-    if (nullptr == root) {
-      return nullptr;
+  public:
+    Node* connect(Node* root) {
+        if (root == nullptr) {
+            return nullptr;
+        }
+        Node* dummy = new Node();
+        Node* prev = nullptr;
+        Node* curr = root;
+        while (curr != nullptr) {
+            dummy->next = nullptr;
+            prev = dummy;
+            while (curr != nullptr) {
+                if (curr->left) {
+                    prev->next = curr->left;
+                    prev = prev->next;
+                }
+                if (curr->right) {
+                    prev->next = curr->right;
+                    prev = prev->next;
+                }
+                curr = curr->next;
+            }
+            curr = dummy->next;
+        }
+        return root;
     }
-    std::queue<Node *> que;
-    Node *curNode;
-    Node *preNode;
-    que.emplace(root);
-    while (!que.empty()) {
-      int size = que.size();
-      for (int i = 0; i < size; ++i) {
-        if (0 == i) {
-          preNode = que.front();
-          que.pop();
-          curNode = preNode; // 不要忘记
-        } else {
-          curNode = que.front();
-          que.pop();
-          preNode->next = curNode;
-          preNode = curNode;
-        }
-        if (curNode->left) {
-          que.emplace(curNode->left);
-        }
-        if (curNode->right) {
-          que.emplace(curNode->right);
-        }
-      }
-      curNode->next = nullptr;
-    }
-    return root;
-  }
 };
